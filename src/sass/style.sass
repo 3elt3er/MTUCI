@@ -1,0 +1,86 @@
+@font-face
+  font-weight: 400
+  font-family: Montserrat
+  src: url("src/fonts/Montserrat-Regular.ttf")
+    
+@font-face
+  font-weight: 500
+  font-family: Montserrat
+  src: url("src/fonts/Montserrat-Medium.ttf")
+
+@font-face
+  font-weight: 600
+  font-family: Montserrat
+  src: url("src/fonts/Montserrat-SemiBold.ttf")
+
+@font-face
+  font-weight: 700
+  font-family: Montserrat
+  src: url("src/fonts/Montserrat-Bold.ttf")
+    
+@font-face
+  font-weight: 800
+  font-family: Montserrat
+  src: url("src/fonts/Montserrat-ExtraBold.ttf")
+    
+@font-face
+  font-weight: 900
+  font-family: Montserrat
+  src: url("src/fonts/Montserrat-Black.ttf")
+
+body
+    background-color: #FFFBF5
+
+#mtuci_logo
+    display: block
+    margin-left: auto
+    margin-right: auto
+    width: 60%
+
+#header
+    margin: 10px
+    text-align: center
+    font: normal 45px "Montserrat"
+
+.container
+    box-sizing: border-box
+    display: flex
+    flex-direction: column
+    width: 1230px
+    margin: auto
+    padding-top: 30px
+    padding-bottom: 30px
+    gap: 20px
+
+.menu
+    display: grid
+    grid-template-columns: repeat(4, 1fr)
+    margin-top: 20px
+    gap: 53px
+    font: normal 22px "Montserrat"
+    font-weight: 800
+    
+
+.menu_button
+    box-sizing: border-box
+    text-align: center
+    border-radius: 6px
+    width: 100%
+    height: 100px
+    padding: 30px 0 30px 0
+    border: 4px solid #0D0350
+    background-color: #332974
+    box-shadow: 4px 4px 14px #00000055
+    color: white
+    &:hover 
+        opacity: 0.92
+        outline: none
+        border: 4px solid #293874
+
+    &:focus-visible 
+        border: 4px solid #293874
+        outline: none
+
+    &:active
+        background-color: #0D0350
+        border: 4px solid #0D0350
