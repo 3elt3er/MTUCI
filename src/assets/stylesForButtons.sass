@@ -108,7 +108,7 @@ header
     display: flex
     flex-direction: column
     font-family: "Montserrat"
-    max-width: 1150px
+    max-width: 76%
     top: 11%
     left: 3%
 
@@ -144,7 +144,6 @@ header
     font-weight: 500
     label
         position: relative
-        font-weight: 600
         background-image: url(arrow.svg)
         background: #CBC3FF
         display: block
@@ -165,7 +164,7 @@ header
         transition: all 0.31s ease
         
     input:checked ~ .collapsible-text 
-        max-height: 300px
+        max-height: 500px
         padding-bottom: 15px
         background: #fff
         border: 1px solid black
@@ -174,6 +173,9 @@ header
         top: 0
         padding: 15px
         margin-bottom: 5px
+        p
+            margin-top:  0
+
     input
         display: none
     input:checked + label:after
@@ -182,6 +184,7 @@ header
 .collapsible-text
     position: relative
     max-height: 1px
+    padding-bottom: 0
     overflow: hidden
     border-radius: 4px
     line-height: 1.4
