@@ -148,10 +148,10 @@ header {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   position: fixed;
+  height: auto;
   right: 4%;
   top: 15%;
   width: 14%;
-  height: 300px;
   border-radius: 6px;
   border: 3px solid #0D0350;
   background-color: #FFF;
@@ -195,6 +195,7 @@ header {
 .checkbox {
   font-weight: 500;
   overflow: hidden;
+  max-height: 300px;
 }
 .checkbox ol {
   margin-top: 10px;
