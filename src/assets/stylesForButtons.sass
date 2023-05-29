@@ -40,7 +40,10 @@ body
 form
   margin: 0
   padding: 0
-    
+
+p:last-child
+    margin-bottom: 0
+
 header
     position: fixed
     box-sizing: border-box
@@ -105,6 +108,7 @@ header
 
 .container
     position: relative
+    padding-bottom: 30px
     display: flex
     flex-direction: column
     font-family: "Montserrat"
@@ -123,8 +127,33 @@ header
     border: 3px solid #0D0350
     background-color: #FFF
 
+.questionForm
+    box-sizing: border-box
+    font: normal 15px "Montserrat"
+    font-weight: 800
+    width: 100%
+    text-align: center
+    background-color: #CBC3FF
+    border-radius: 6px
+    padding: 15px
+    border: 3px solid #0D0350
+    cursor: pointer 
+    &:hover 
+        opacity: 0.92
+        cursor: pointer
+        outline: none  
+
+    &:focus-visible 
+        border: 4px solid #293874
+        outline: none
+
+    &:active
+        background-color: #9d97c8
+
+
 .clueHeader
     background-color: #CBC3FF
+    text-align: center
     padding: 5px
     font-weight: 700
     border-radius: 3px
@@ -132,6 +161,7 @@ header
 
 .checkbox
     font-weight: 500
+    overflow: hidden
     ol
         margin-top: 10px
         padding-right: 2px
@@ -139,7 +169,7 @@ header
         padding: 2px
 
 .collapsible
-    max-width: 1150px
+    max-width: 100%
     overflow: hidden 
     font-weight: 500
     label
@@ -164,7 +194,7 @@ header
         transition: all 0.31s ease
         
     input:checked ~ .collapsible-text 
-        max-height: 500px
+        max-height: 1000px
         padding-bottom: 15px
         background: #fff
         border: 1px solid black
@@ -175,7 +205,6 @@ header
         margin-bottom: 5px
         p
             margin-top:  0
-
     input
         display: none
     input:checked + label:after
@@ -192,4 +221,16 @@ header
     opacity: 0
     transition: all 0.3s ease
 
+p
+    margin: 5px
+.strong
+    font-weight: 800
 
+.kursiv
+    font-style: italic
+
+.podcherk
+    text-decoration: underline
+
+.red
+    color: red
