@@ -85,12 +85,11 @@ body {
   border-radius: 6px;
   width: 100%;
   height: 100px;
-  padding: 30px 0 30px 0;
   border: 4px solid #0D0350;
   background-color: #332974;
   -webkit-box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.3333333333);
           box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.3333333333);
-  color: white;
+  color: whitesmoke;
 }
 .menu_button:hover {
   opacity: 0.92;

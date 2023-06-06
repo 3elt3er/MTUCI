@@ -35,8 +35,8 @@ body
     margin: 0
     box-sizing: border-box
     padding: 0
-    height: 1000px
-    background-color: #FFFBF5
+    height: 100%
+    background-color: #fffefc
 form
   margin: 0
   padding: 0
@@ -48,15 +48,16 @@ p:last-child
     font-weight: 500
 
 header
-    position: fixed
+    position: sticky
+    top: 0%
     box-sizing: border-box
     width: 100%
     display: flex
     justify-content: space-between
     background-color: #332974
-    height: 80px
     font: normal 30px "Montserrat"
     font-weight: 800
+    padding: 5px
     z-index: 100
 
 #arrow-back
@@ -66,7 +67,7 @@ header
     margin-left: 40px
     background-color: #fff
     border: 2px solid #0D0350
-    padding: 2px 4px
+    padding: 6px 16px
     border-radius: 5px
     &:hover 
         opacity: 0.92
@@ -85,7 +86,7 @@ header
 
 .upper
     margin-top: 21px
-    color: #fff
+    color: whitesmoke
 
 .inputText
     font: normal 14px "Montserrat"
@@ -101,7 +102,7 @@ header
   margin-right: 60px
   margin-top: 25px
   margin-bottom: 23px
-  padding: 5px
+  padding: 6px 16px
   border-radius: 6px
   font-size: 12px
   border: 3px solid #0D0350
@@ -110,25 +111,33 @@ header
   background-color: #fff
 
 .container
+    display: flex
     position: relative
     padding-bottom: 30px
-    display: flex
-    flex-direction: column
+    margin: 20px 20px
     font-family: "Montserrat"
-    max-width: 76%
-    top: 11%
-    left: 3%
+    gap: 1%
+
+.listQA
+    width: 80%
+    height: fit-content
+    background-color: #fff
+    border-radius: 8px
+    padding: 20px 24px
+    box-shadow: 2px 2px 20px rgba(0,0,0,0.1)
+    border: 1px solid #ccc
 
 .clue
-    box-sizing: border-box
-    position: fixed
-    height: auto
-    right: 4%
+    position: sticky
     top: 15%
-    width: 14%
-    border-radius: 6px
-    border: 3px solid #0D0350
+    word-break: break-word
+    box-sizing: border-box
+    width: 20%
     background-color: #FFF
+    height: 1%
+    border: 1px solid #0D0350
+    border-radius: 6px
+    box-shadow: 2px 2px 20px rgba(0,0,0,0.1)
 
 .questionForm
     box-sizing: border-box
@@ -136,11 +145,12 @@ header
     font-weight: 800
     width: 100%
     text-align: center
-    background-color: #CBC3FF
-    border-radius: 6px
+    background-color: #223272
+    color: whitesmoke
     padding: 15px
-    border: 3px solid #0D0350
     cursor: pointer 
+    border-radius: 0 0 6px 6px
+    border: none
     &:hover 
         opacity: 0.92
         cursor: pointer
@@ -151,21 +161,21 @@ header
         outline: none
 
     &:active
-        background-color: #9d97c8
+        background-color: #53499b
 
 
 .clueHeader
+    word-break: break-word
     background-color: #CBC3FF
     text-align: center
-    padding: 5px
+    padding: 10px
     font-weight: 700
-    border-radius: 3px
-    border-bottom: 3px solid #0D0350
+    border-bottom: 1px solid #0D0350
+    border-radius: 6px 6px 0 0
 
 .checkbox
     font-weight: 500
     overflow: hidden
-    max-height: 300px
     ol
         margin-top: 10px
         padding-right: 2px
@@ -228,7 +238,7 @@ header
 p
     margin: 5px
 .strong
-    font-weight: 800
+    font-weight: 700
 
 .kursiv
     font-style: italic
