@@ -140,6 +140,7 @@ header
     box-shadow: 2px 2px 20px rgba(0,0,0,0.1)
 
 .questionForm
+    margin-top: 5px
     box-sizing: border-box
     font: normal 15px "Montserrat"
     font-weight: 800
@@ -173,14 +174,9 @@ header
     border-bottom: 1px solid #0D0350
     border-radius: 6px 6px 0 0
 
-.checkbox
+.sidebar
     font-weight: 500
     overflow: hidden
-    ol
-        margin-top: 10px
-        padding-right: 2px
-    li
-        padding: 2px
 
 .collapsible
     max-width: 100%
@@ -248,3 +244,59 @@ p
 
 .red
     color: red
+
+.collapsibleBar
+    max-width: 100%
+    overflow: hidden 
+    font-weight: 500
+    label
+        position: relative
+        display: block
+        cursor: pointer
+        padding: 2px
+        padding-inline-start: 22px
+        z-index: 1
+        font-weight: 500
+    &:after
+        content: ""
+        position: absolute
+        right: 15px
+        top: 15px
+        width: 18px
+        height: 18px
+        transition: all 0.31s ease
+    &:hover
+        background-color: #cbc3ff48
+        
+    input:checked ~ .collapsible-textBar 
+        max-height: 1000px
+        background: #fff
+        border: 2px solid #ccc
+        border-radius: 4px
+        opacity: 1
+        top: 0
+        padding: 5px 10px
+        margin-bottom: 5px
+        p
+            margin-top:  0
+    input
+        display: none
+    input:checked + label:after
+        transform: rotate(90deg)
+
+.collapsible-textBar
+    position: relative
+    max-height: 1px
+    padding-bottom: 0
+    overflow: hidden
+    border-radius: 4px
+    line-height: 1.4
+    top: -100%
+    opacity: 0
+    transition: all 0.3s ease
+
+.sidebarBar
+    margin-top: 10px
+    margin-bottom: 5px
+    font-weight: 500
+    overflow: hidden

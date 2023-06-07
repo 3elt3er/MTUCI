@@ -173,6 +173,7 @@ header {
 }
 
 .questionForm {
+  margin-top: 5px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font: normal 15px "Montserrat";
@@ -209,16 +210,9 @@ header {
   border-radius: 6px 6px 0 0;
 }
 
-.checkbox {
+.sidebar {
   font-weight: 500;
   overflow: hidden;
-}
-.checkbox ol {
-  margin-top: 10px;
-  padding-right: 2px;
-}
-.checkbox li {
-  padding: 2px;
 }
 
 .collapsible {
@@ -302,4 +296,73 @@ p {
 
 .red {
   color: red;
+}
+
+.collapsibleBar {
+  max-width: 100%;
+  overflow: hidden;
+  font-weight: 500;
+}
+.collapsibleBar label {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  padding: 2px;
+  -webkit-padding-start: 22px;
+          padding-inline-start: 22px;
+  z-index: 1;
+  font-weight: 500;
+}
+.collapsibleBar:after {
+  content: "";
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  width: 18px;
+  height: 18px;
+  -webkit-transition: all 0.31s ease;
+  transition: all 0.31s ease;
+}
+.collapsibleBar:hover {
+  background-color: rgba(203, 195, 255, 0.2823529412);
+}
+.collapsibleBar input:checked ~ .collapsible-textBar {
+  max-height: 1000px;
+  background: #fff;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  opacity: 1;
+  top: 0;
+  padding: 5px 10px;
+  margin-bottom: 5px;
+}
+.collapsibleBar input:checked ~ .collapsible-textBar p {
+  margin-top: 0;
+}
+.collapsibleBar input {
+  display: none;
+}
+.collapsibleBar input:checked + label:after {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.collapsible-textBar {
+  position: relative;
+  max-height: 1px;
+  padding-bottom: 0;
+  overflow: hidden;
+  border-radius: 4px;
+  line-height: 1.4;
+  top: -100%;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.sidebarBar {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-weight: 500;
+  overflow: hidden;
 }
