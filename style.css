@@ -28,13 +28,60 @@
   font-family: "Montserrat";
   src: url("src/fonts/Montserrat-Black.ttf");
 }
+a, a:link, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
 button {
-  font: normal 22px "Montserrat";
-  font-weight: 800;
+  font: normal 24px "Montserrat";
+  font-weight: 600;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  scroll-behavior: smooth;
 }
 
 body {
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  height: 100%;
   background-color: #fffefc;
+}
+
+header {
+  position: sticky;
+  top: 0%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #332974;
+  font: normal 30px "Montserrat";
+  padding: 20px 60px;
+  z-index: 100;
+  border-radius: 0px 0px 16px 16px;
+  margin-bottom: 16px;
+}
+
+.identify {
+  color: whitesmoke;
+  font-weight: 700;
+  font-size: 25px;
+  text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3529411765);
 }
 
 #mtuci_logo {
@@ -44,10 +91,10 @@ body {
   width: 40%;
 }
 
-.header {
+.paragraph {
   margin: 10px;
   text-align: center;
-  font: normal 40px "Montserrat";
+  font: 600 40px "Montserrat";
 }
 
 .container {
@@ -75,34 +122,34 @@ body {
   margin: 20px 0;
   gap: 53px;
   font: normal 22px "Montserrat";
-  font-weight: 800;
 }
 
 .menu_button {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   text-align: center;
-  border-radius: 6px;
+  border-radius: 20px;
   width: 100%;
-  height: 100px;
+  height: 106px;
+  padding: 10px;
   border: 4px solid #0D0350;
-  background-color: #332974;
+  background-color: #FFF;
   -webkit-box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.3333333333);
           box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.3333333333);
-  color: whitesmoke;
+  color: #14102a;
 }
 .menu_button:hover {
   opacity: 0.92;
   cursor: pointer;
   outline: none;
-  border: 4px solid #293874;
+  border: 4px solid #233786;
 }
 .menu_button:focus-visible {
   border: 4px solid #293874;
   outline: none;
 }
 .menu_button:active {
-  background-color: #0D0350;
+  background-color: rgba(34, 0, 255, 0.1098039216);
   border: 4px solid #0D0350;
 }
 

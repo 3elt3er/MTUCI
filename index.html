@@ -17,6 +17,13 @@
         <link rel="stylesheet" href="style.css"/>
     </head>
     <body>
+        <header class="header">
+            <a href="#mtuci_logo" class="identify">Вопрос-ответ</a>
+            <a href="#scripts" class="identify">Скрипты</a>
+            <a href="#backalavr" class="identify">Бакалавриат</a>
+            <a href="#magistr" class="identify">Магистратура</a>
+            <a href="#dovuz" class="identify">Довуз</a>
+        </header>
         <div class="container">
             <!-- Картинка-->
             <div>
@@ -27,7 +34,7 @@
                 />
             </div>
             <!-- Просто строчка текста в центре -->
-            <div class="header">Вопрос - ответ для отдела Телемаркетинга</div>
+            <div class="paragraph">Вопрос - ответ для отдела Телемаркетинга</div>
             <!-- Пошел блок кнопок -->
             <div class="menu">
                 <form action="src/assets/submission.html"><button class="menu_button">Подача документов</button></form>
@@ -38,24 +45,42 @@
                 <form action="src/assets/kvota.html"><button class="menu_button">Квоты</button></form>
                 <form action="src/assets/celevoy.html"><button class="menu_button">Целевой договор</button></form>
                 <form action="src/assets/otsrochka.html"><button class="menu_button">Отсрочка</button></form>
-                <form action="src/assets/activnosti.html"><button class="menu_button">Активности</button></form>
+                <form action="src/assets/activnosti.html" id="scripts"><button class="menu_button">Активности</button></form>
                 <form action="src/assets/nomera.html"><button class="menu_button">Номера отделов</button></form>
                 <form action="src/assets/hostel.html"><button class="menu_button">Общежитие</button></form>
                 <form action="src/assets/id.html"><button class="menu_button">ИД/БВИ</button></form>
             </div>
-            <div class="header">Скрипты</div>
+            <div class="paragraph">Скрипты</div>
             <div class="exception">
                 <form action="src/assets/vhodyashiy.html"><button class="menu_button">Входящий звонок</button></form>
-                <form action="src/assets/ishodyashiy.html"><button class="menu_button">Исходящий звонок</button></form>
+                <form action="src/assets/ishodyashiy.html" id="backalavr"><button class="menu_button">Исходящий звонок</button></form>
                 <form action="src/assets/segmentation.html"><button class="menu_button">Вопросы верификации</button></form>
             </div>
-            <div class="header">Шпаргалка по направлениям</div>
+            <div class="paragraph">Шпаргалка по очным направлениям</div>
             <div class="exceptionSecond">
                 <form action="src/assets/it.html"><button class="menu_button">ИТ</button></form>
                 <form action="src/assets/kiib.html"><button class="menu_button">КиИБ</button></form>
                 <form action="src/assets/rit.html"><button class="menu_button">РиТ</button></form>
                 <form action="src/assets/siss.html"><button class="menu_button">СиСС</button></form>
                 <form action="src/assets/cimk.html"><button class="menu_button">ЦЭиМК</button></form>
+            </div>
+            <div class="paragraph">Шпаргалка по заочным направлениям</div>
+            <div class="exception">
+                <form action="src/assets/"><button class="menu_button">Заочная</button></form>
+                <form action="src/assets/"><button class="menu_button">Ускоренная заочная</button></form>
+                <form action="src/assets/" id="magistr"><button class="menu_button">Очно-заочная</button></form>
+            </div>
+            <div class="paragraph">Шпаргалка по направлениям магистратуры</div>
+            <div class="exception">
+                <form action="src/assets/"><button class="menu_button">Очная</button></form>
+                <form action="src/assets/"><button class="menu_button">Заочная</button></form>
+                <form action="src/assets/" id="dovuz"><button class="menu_button">Очно-заочная</button></form>
+            </div>
+            <div class="paragraph">Довузовская подготовка</div>
+            <div class="exception">
+                <form action="src/assets/"><button class="menu_button">Довуз по ЕГЭ</button></form>
+                <form action="src/assets/"><button class="menu_button">Довуз по ОГЭ</button></form>
+                <form action="src/assets/"><button class="menu_button">Довуз по ВИ</button></form>
             </div>
         </div>
     </body>
