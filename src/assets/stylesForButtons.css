@@ -419,4 +419,8 @@ p {
   .third {
     display: none;
   }
+
+  header {
+    padding-bottom: 15px;
+  }
 }
