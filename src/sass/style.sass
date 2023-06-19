@@ -27,7 +27,7 @@
   font-weight: 900
   font-family: 'Montserrat'
   src: url("src/fonts/Montserrat-Black.ttf")
-
+    
 a, a:link, a:visited
     text-decoration: none
 
@@ -147,3 +147,67 @@ header
 
 .strong
     font-weight: 600
+
+@media screen and (min-width: 900px) and (max-width: 1100px)
+    .menu
+        grid-template-columns: repeat(2, 1fr)
+
+@media screen and (min-width: 610px) and (max-width: 900px)
+    .identify
+        font-size: 16px
+
+    .menu
+        grid-template-columns: repeat(2, 1fr)
+
+    .exception 
+        grid-template-columns: repeat(2, 1fr)
+    
+    .exceptionSecond
+        grid-template-columns: repeat(2, 1fr)
+
+@media screen and (min-width: 500px) and (max-width: 610px)
+    .identify
+        font-size: 12px
+    .menu
+        grid-template-columns: repeat(2, 1fr)
+
+    .exception 
+        grid-template-columns: repeat(2, 1fr)
+    
+    .exceptionSecond
+        grid-template-columns: repeat(2, 1fr)
+    
+    .paragraph
+        font-size: 30px
+
+    .menu_button
+        font-size: 18px
+        height: 80px
+
+@media screen and (min-width: 200px) and (max-width: 500px)
+    .identify
+        font-size: 10px
+    .menu
+        grid-template-columns: repeat(2, 1fr)
+
+    .exception 
+        grid-template-columns: repeat(2, 1fr)
+    
+    .exceptionSecond
+        grid-template-columns: repeat(2, 1fr)
+    
+    .paragraph
+        font-size: 20px
+
+    .menu_button
+        font-size: 12px
+        height: 60px
+    
+    header
+        padding: 10px 20px
+
+    footer
+        font-size: 12px
+
+    .developers
+        margin-left: 20px
