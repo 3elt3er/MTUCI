@@ -243,7 +243,7 @@ header {
   transition: all 0.31s ease;
 }
 .collapsible input:checked ~ .collapsible-text {
-  max-height: 2000px;
+  max-height: 4000px;
   padding-bottom: 15px;
   background: #ffffff;
   border: 1px solid black;
@@ -326,7 +326,7 @@ p {
   background-color: rgba(203, 195, 255, 0.2823529412);
 }
 .collapsibleBar input:checked ~ .collapsible-textBar {
-  max-height: 2000px;
+  max-height: 4000px;
   background: #fff;
   border: 2px solid #ccc;
   border-radius: 4px;
