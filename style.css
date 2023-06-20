@@ -165,6 +165,17 @@ header {
   font-weight: 800;
 }
 
+.exceptionFirst {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 53px 1fr 53px 1fr 53px 1fr;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 20px 0;
+  gap: 53px;
+  font: normal 22px "Montserrat";
+  font-weight: 800;
+}
+
 .exceptionSecond {
   display: -ms-grid;
   display: grid;
@@ -186,10 +197,49 @@ header {
   font-weight: 600;
 }
 
+.kostil {
+  margin-top: 22px;
+  margin-bottom: 10px;
+}
+
 @media screen and (min-width: 900px) and (max-width: 1100px) {
   .menu {
-    -ms-grid-columns: (1fr)[2];
+    -ms-grid-columns: 1fr 30px 1fr;
     grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+
+  .exception {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 20px;
+  }
+
+  .exceptionSecond {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 20px;
+  }
+
+  .exceptionFirst {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 20px;
   }
 }
 @media screen and (min-width: 610px) and (max-width: 900px) {
@@ -198,50 +248,45 @@ header {
   }
 
   .menu {
-    -ms-grid-columns: (1fr)[2];
+    -ms-grid-columns: 1fr 30px 1fr;
     grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
   }
 
   .exception {
-    -ms-grid-columns: (1fr)[2];
-    grid-template-columns: repeat(2, 1fr);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 20px;
   }
 
   .exceptionSecond {
-    -ms-grid-columns: (1fr)[2];
-    grid-template-columns: repeat(2, 1fr);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 20px;
+  }
+
+  .exceptionFirst {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 20px;
   }
 }
-@media screen and (min-width: 500px) and (max-width: 610px) {
-  .identify {
-    font-size: 12px;
-  }
-
-  .menu {
-    -ms-grid-columns: (1fr)[2];
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .exception {
-    -ms-grid-columns: (1fr)[2];
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .exceptionSecond {
-    -ms-grid-columns: (1fr)[2];
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .paragraph {
-    font-size: 30px;
-  }
-
-  .menu_button {
-    font-size: 18px;
-    height: 80px;
-  }
-}
-@media screen and (min-width: 200px) and (max-width: 500px) {
+@media screen and (min-width: 200px) and (max-width: 610px) {
   .identify {
     font-size: 12px;
   }
@@ -264,6 +309,17 @@ header {
   }
 
   .exceptionSecond {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 20px;
+  }
+
+  .exceptionFirst {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

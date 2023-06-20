@@ -132,6 +132,14 @@ header
     font: normal 22px "Montserrat"
     font-weight: 800
 
+.exceptionFirst
+    display: grid
+    grid-template-columns: repeat(4, 1fr)
+    margin: 20px 0
+    gap: 53px
+    font: normal 22px "Montserrat"
+    font-weight: 800
+
 .exceptionSecond
     display: grid
     grid-template-columns: repeat(5, 1fr)
@@ -148,9 +156,29 @@ header
 .strong
     font-weight: 600
 
+.kostil
+    margin-top: 22px
+    margin-bottom: 10px
+
 @media screen and (min-width: 900px) and (max-width: 1100px)
     .menu
         grid-template-columns: repeat(2, 1fr)
+        gap: 30px
+
+    .exception 
+        display: flex
+        flex-direction: column
+        gap: 20px
+    
+    .exceptionSecond
+        display: flex
+        flex-direction: column
+        gap: 20px
+
+    .exceptionFirst 
+        display: flex
+        flex-direction: column
+        gap: 20px
 
 @media screen and (min-width: 610px) and (max-width: 900px)
     .identify
@@ -158,33 +186,24 @@ header
 
     .menu
         grid-template-columns: repeat(2, 1fr)
+        gap: 30px
 
-    .exception 
-        grid-template-columns: repeat(2, 1fr)
+    .exception
+        display: flex
+        flex-direction: column
+        gap: 20px
     
     .exceptionSecond
-        grid-template-columns: repeat(2, 1fr)
-
-@media screen and (min-width: 500px) and (max-width: 610px)
-    .identify
-        font-size: 12px
-    .menu
-        grid-template-columns: repeat(2, 1fr)
-
-    .exception 
-        grid-template-columns: repeat(2, 1fr)
+        display: flex
+        flex-direction: column
+        gap: 20px
     
-    .exceptionSecond
-        grid-template-columns: repeat(2, 1fr)
-    
-    .paragraph
-        font-size: 30px
+    .exceptionFirst 
+        display: flex
+        flex-direction: column
+        gap: 20px
 
-    .menu_button
-        font-size: 18px
-        height: 80px
-
-@media screen and (min-width: 200px) and (max-width: 500px)
+@media screen and (min-width: 200px) and (max-width: 610px)
     .identify
         font-size: 12px
     .menu
@@ -197,6 +216,11 @@ header
         gap: 20px
     
     .exceptionSecond
+        display: flex
+        flex-direction: column
+        gap: 20px
+
+    .exceptionFirst 
         display: flex
         flex-direction: column
         gap: 20px

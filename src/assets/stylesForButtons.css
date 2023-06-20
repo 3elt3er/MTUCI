@@ -54,7 +54,7 @@ p:last-child {
 }
 
 .stronger {
-  font-weight: 500;
+  font-weight: 600;
 }
 
 header {
@@ -428,4 +428,18 @@ p {
     margin-top: 7px;
     width: 80%;
   }
+}
+table {
+  margin: 20px;
+  width: 300px;
+  border-collapse: collapse;
+}
+
+td, th {
+  padding: 3px;
+  border: 1px solid black;
+}
+
+li {
+  padding: 4px;
 }
