@@ -243,22 +243,35 @@ header {
 }
 @media screen and (min-width: 200px) and (max-width: 500px) {
   .identify {
-    font-size: 10px;
+    font-size: 12px;
   }
 
   .menu {
-    -ms-grid-columns: (1fr)[2];
+    -ms-grid-columns: 1fr 30px 1fr;
     grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
   }
 
   .exception {
-    -ms-grid-columns: (1fr)[2];
-    grid-template-columns: repeat(2, 1fr);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 20px;
   }
 
   .exceptionSecond {
-    -ms-grid-columns: (1fr)[2];
-    grid-template-columns: repeat(2, 1fr);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 20px;
   }
 
   .paragraph {
@@ -266,12 +279,13 @@ header {
   }
 
   .menu_button {
-    font-size: 12px;
-    height: 60px;
+    font-size: 16px;
+    height: 80px;
   }
 
   header {
-    padding: 10px 20px;
+    padding: 20px;
+    display: none;
   }
 
   footer {
@@ -280,5 +294,9 @@ header {
 
   .developers {
     margin-left: 20px;
+  }
+
+  #mtuci_logo {
+    margin-top: 20px;
   }
 }
