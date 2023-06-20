@@ -241,6 +241,10 @@ header {
             flex-direction: column;
     gap: 20px;
   }
+
+  .kostil {
+    margin-top: 10px;
+  }
 }
 @media screen and (min-width: 610px) and (max-width: 900px) {
   .identify {
@@ -284,6 +288,10 @@ header {
         -ms-flex-direction: column;
             flex-direction: column;
     gap: 20px;
+  }
+
+  .kostil {
+    margin-top: 10px;
   }
 }
 @media screen and (min-width: 200px) and (max-width: 610px) {
@@ -355,5 +363,9 @@ header {
 
   #mtuci_logo {
     margin-top: 20px;
+  }
+
+  .kostil {
+    margin-top: 8px;
   }
 }
