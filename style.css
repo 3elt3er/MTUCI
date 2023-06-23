@@ -38,7 +38,7 @@ a:hover {
 
 button {
   font: normal 24px "Montserrat";
-  font-weight: 600;
+  font-weight: 500;
 }
 
 html {
@@ -80,7 +80,7 @@ header {
 
 .identify {
   color: whitesmoke;
-  font-weight: 700;
+  font-weight: 600;
   font-size: 25px;
   text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3529411765);
 }
@@ -95,7 +95,7 @@ header {
 .paragraph {
   margin: 10px;
   text-align: center;
-  font: 600 40px "Montserrat";
+  font: 500 40px "Montserrat";
 }
 
 .container {
