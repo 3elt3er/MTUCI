@@ -42,6 +42,9 @@ form
   margin: 0
   padding: 0
 
+b
+    font-weight: 600
+
 p:last-child
     margin-bottom: 0
 
@@ -125,11 +128,15 @@ header
     word-break: break-word
     box-sizing: border-box
     width: 20%
-    background-color: #FFF
+    background-color: #fffefc
     height: 1%
-    border: 1px solid #0D0350
+
+.clueUp
+    border: 1px solid #ccc
+    border-top: none
     border-radius: 6px
-    box-shadow: 2px 2px 20px rgba(0,0,0,0.1)
+    z-index: 1
+    box-shadow: 2px 2px 20px rgba(0,0,0,0.16)
 
 .questionForm
     margin-top: 5px
@@ -138,12 +145,13 @@ header
     font-weight: 800
     width: 100%
     text-align: center
-    background-color: #223272
+    background-color: #63578E
+    box-shadow: 2px 2px 20px rgba(0,0,0,0.16)
     color: whitesmoke
     padding: 15px
     cursor: pointer 
-    border-radius: 0 0 6px 6px
     border: none
+    border-radius: 6px
     &:hover 
         opacity: 0.92
         cursor: pointer
@@ -159,12 +167,12 @@ header
 
 .clueHeader
     word-break: break-word
-    background-color: #CBC3FF
+    background-color: #8878C4
     text-align: center
     padding: 10px
     font-weight: 700
-    border-bottom: 1px solid #0D0350
     border-radius: 6px 6px 0 0
+    color: whitesmoke
 
 .sidebar
     font-weight: 500
@@ -172,59 +180,53 @@ header
 
 .collapsible
     max-width: 100%
-    overflow: hidden 
     font-weight: 500
-    label
-        position: relative
-        background-image: url(arrow.svg)
-        background: #c3caff60
-        display: block
-        cursor: pointer
-        margin-bottom: 5px
-        padding: 15px
-        border-radius: 10px
-        z-index: 1
-        border: 2px solid #0D0350
-        font-weight: 700
-    &:after
-        content: ""
-        position: absolute
-        right: 15px
-        top: 15px
-        width: 18px
-        height: 18px
-        transition: all 0.31s ease
-        
-    input:checked ~ .collapsible-text 
-        max-height: 4000px
-        padding-bottom: 15px
-        background: #ffffff
-        border: 1px solid black
-        border-radius: 10px
-        opacity: 1
-        top: 0
-        padding: 15px
-        margin-bottom: 5px
-        p
-            margin-top:  0
-    input
-        display: none
-    input:checked + label:after
-        transform: rotate(90deg)
+    padding: 10px 10px 10px 16px 
+    border: 2px solid #372579
+    border-radius: 8px
+    cursor: pointer
+    box-shadow: 2px 2px 20px rgba(0,0,0,0.05)
+    margin-bottom: 6px
+
+.collapsible-head
+    display: flex
+    align-items: center
+    gap: 10px
+    padding-left: 16px 
+    font-weight: 600
 
 .collapsible-text
     position: relative
-    max-height: 1px
-    padding-bottom: 0
+    max-height: 0
     overflow: hidden
-    border-radius: 10px
-    line-height: 1.4
-    top: -100%
-    opacity: 0
-    transition: all 0.3s ease
+    transition: max-height 0.4s ease-in-out
+    
+.collapsible-text-content
+    padding: 10px 10px
+    
+.collapsible.active svg
+    transform: rotate(-180deg) 
 
+svg
+    transition: transform .3s ease-in
+    transform-origin: 50% 60%
+    padding-top: 6px 
+
+.collapsible.active .collapsible-text
+    max-height: 4000px
+    animation: fade 0.5s ease-in-out
+
+@keyframes fade
+    from
+        opacity: 0
+        transform: translateY(-6px)
+    to      
+        opacity: 1
+        transform: translateY(0px)
+        
 p
     margin: 5px
+
 .strong
     font-weight: 600
 
@@ -236,56 +238,6 @@ p
 
 .red
     color: red
-
-.collapsibleBar
-    max-width: 100%
-    overflow: hidden 
-    font-weight: 500
-    label
-        position: relative
-        display: block
-        cursor: pointer
-        padding: 2px
-        padding-inline-start: 22px
-        z-index: 1
-        font-weight: 500
-    &:after
-        content: ""
-        position: absolute
-        right: 15px
-        top: 15px
-        width: 18px
-        height: 18px
-        transition: all 0.31s ease
-    &:hover
-        background-color: #cbc3ff48
-        
-    input:checked ~ .collapsible-textBar 
-        max-height: 4000px
-        background: #fff
-        border: 2px solid #ccc
-        border-radius: 4px
-        opacity: 1
-        top: 0
-        padding: 5px 10px
-        margin-bottom: 5px
-        p
-            margin-top:  0
-    input
-        display: none
-    input:checked + label:after
-        transform: rotate(90deg)
-
-.collapsible-textBar
-    position: relative
-    max-height: 1px
-    padding-bottom: 0
-    overflow: hidden
-    border-radius: 4px
-    line-height: 1.4
-    top: -100%
-    opacity: 0
-    transition: all 0.3s ease
 
 .sidebarBar
     margin-top: 10px
@@ -357,3 +309,26 @@ td, th
 li
     padding: 4px
         
+.empty
+    color: #fff
+    font-size: 3px
+
+.collapsible-clue
+    box-shadow: none
+    padding: 0
+    border: none
+    border-radius: 6px
+    margin-bottom: 0
+    &:hover
+        background-color: #cbc3ff39
+
+.clueText
+    padding: 10px 12px
+
+.collapsible-head-clue
+    font-weight: 500
+
+.collapsible-text-content-clue
+    font-weight: 400
+    transition: max-height 0.1s ease-in-out
+    padding: 8px 8px 8px 14px

@@ -49,6 +49,10 @@ form {
   padding: 0;
 }
 
+b {
+  font-weight: 600;
+}
+
 p:last-child {
   margin-bottom: 0;
 }
@@ -156,12 +160,17 @@ header {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 20%;
-  background-color: #FFF;
+  background-color: #fffefc;
   height: 1%;
-  border: 1px solid #0D0350;
+}
+
+.clueUp {
+  border: 1px solid #ccc;
+  border-top: none;
   border-radius: 6px;
-  -webkit-box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.1);
-          box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  -webkit-box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.16);
+          box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.16);
 }
 
 .questionForm {
@@ -172,12 +181,14 @@ header {
   font-weight: 800;
   width: 100%;
   text-align: center;
-  background-color: #223272;
+  background-color: #63578E;
+  -webkit-box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.16);
+          box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.16);
   color: whitesmoke;
   padding: 15px;
   cursor: pointer;
-  border-radius: 0 0 6px 6px;
   border: none;
+  border-radius: 6px;
 }
 .questionForm:hover {
   opacity: 0.92;
@@ -194,12 +205,12 @@ header {
 
 .clueHeader {
   word-break: break-word;
-  background-color: #CBC3FF;
+  background-color: #8878C4;
   text-align: center;
   padding: 10px;
   font-weight: 700;
-  border-bottom: 1px solid #0D0350;
   border-radius: 6px 6px 0 0;
+  color: whitesmoke;
 }
 
 .sidebar {
@@ -209,67 +220,86 @@ header {
 
 .collapsible {
   max-width: 100%;
-  overflow: hidden;
   font-weight: 500;
-}
-.collapsible label {
-  position: relative;
-  background-image: url(arrow.svg);
-  background: rgba(195, 202, 255, 0.3764705882);
-  display: block;
+  padding: 10px 10px 10px 16px;
+  border: 2px solid #372579;
+  border-radius: 8px;
   cursor: pointer;
-  margin-bottom: 5px;
-  padding: 15px;
-  border-radius: 10px;
-  z-index: 1;
-  border: 2px solid #0D0350;
-  font-weight: 700;
+  -webkit-box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.05);
+          box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.05);
+  margin-bottom: 6px;
 }
-.collapsible:after {
-  content: "";
-  position: absolute;
-  right: 15px;
-  top: 15px;
-  width: 18px;
-  height: 18px;
-  -webkit-transition: all 0.31s ease;
-  transition: all 0.31s ease;
-}
-.collapsible input:checked ~ .collapsible-text {
-  max-height: 4000px;
-  padding-bottom: 15px;
-  background: #ffffff;
-  border: 1px solid black;
-  border-radius: 10px;
-  opacity: 1;
-  top: 0;
-  padding: 15px;
-  margin-bottom: 5px;
-}
-.collapsible input:checked ~ .collapsible-text p {
-  margin-top: 0;
-}
-.collapsible input {
-  display: none;
-}
-.collapsible input:checked + label:after {
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
+
+.collapsible-head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  padding-left: 16px;
+  font-weight: 600;
 }
 
 .collapsible-text {
   position: relative;
-  max-height: 1px;
-  padding-bottom: 0;
+  max-height: 0;
   overflow: hidden;
-  border-radius: 10px;
-  line-height: 1.4;
-  top: -100%;
-  opacity: 0;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  -webkit-transition: max-height 0.4s ease-in-out;
+  transition: max-height 0.4s ease-in-out;
 }
 
+.collapsible-text-content {
+  padding: 10px 10px;
+}
+
+.collapsible.active svg {
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+}
+
+svg {
+  -webkit-transition: -webkit-transform 0.3s ease-in;
+  transition: -webkit-transform 0.3s ease-in;
+  transition: transform 0.3s ease-in;
+  transition: transform 0.3s ease-in, -webkit-transform 0.3s ease-in;
+  -webkit-transform-origin: 50% 60%;
+          transform-origin: 50% 60%;
+  padding-top: 6px;
+}
+
+.collapsible.active .collapsible-text {
+  max-height: 4000px;
+  -webkit-animation: fade 0.5s ease-in-out;
+          animation: fade 0.5s ease-in-out;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(-6px);
+            transform: translateY(-6px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(-6px);
+            transform: translateY(-6px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
 p {
   margin: 5px;
 }
@@ -288,68 +318,6 @@ p {
 
 .red {
   color: red;
-}
-
-.collapsibleBar {
-  max-width: 100%;
-  overflow: hidden;
-  font-weight: 500;
-}
-.collapsibleBar label {
-  position: relative;
-  display: block;
-  cursor: pointer;
-  padding: 2px;
-  -webkit-padding-start: 22px;
-          padding-inline-start: 22px;
-  z-index: 1;
-  font-weight: 500;
-}
-.collapsibleBar:after {
-  content: "";
-  position: absolute;
-  right: 15px;
-  top: 15px;
-  width: 18px;
-  height: 18px;
-  -webkit-transition: all 0.31s ease;
-  transition: all 0.31s ease;
-}
-.collapsibleBar:hover {
-  background-color: rgba(203, 195, 255, 0.2823529412);
-}
-.collapsibleBar input:checked ~ .collapsible-textBar {
-  max-height: 4000px;
-  background: #fff;
-  border: 2px solid #ccc;
-  border-radius: 4px;
-  opacity: 1;
-  top: 0;
-  padding: 5px 10px;
-  margin-bottom: 5px;
-}
-.collapsibleBar input:checked ~ .collapsible-textBar p {
-  margin-top: 0;
-}
-.collapsibleBar input {
-  display: none;
-}
-.collapsibleBar input:checked + label:after {
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
-}
-
-.collapsible-textBar {
-  position: relative;
-  max-height: 1px;
-  padding-bottom: 0;
-  overflow: hidden;
-  border-radius: 4px;
-  line-height: 1.4;
-  top: -100%;
-  opacity: 0;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
 }
 
 .sidebarBar {
@@ -435,4 +403,36 @@ td, th {
 
 li {
   padding: 4px;
+}
+
+.empty {
+  color: #fff;
+  font-size: 3px;
+}
+
+.collapsible-clue {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  padding: 0;
+  border: none;
+  border-radius: 6px;
+  margin-bottom: 0;
+}
+.collapsible-clue:hover {
+  background-color: rgba(203, 195, 255, 0.2235294118);
+}
+
+.clueText {
+  padding: 10px 12px;
+}
+
+.collapsible-head-clue {
+  font-weight: 500;
+}
+
+.collapsible-text-content-clue {
+  font-weight: 400;
+  -webkit-transition: max-height 0.1s ease-in-out;
+  transition: max-height 0.1s ease-in-out;
+  padding: 8px 8px 8px 14px;
 }
