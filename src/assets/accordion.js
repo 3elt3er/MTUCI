@@ -1,8 +1,17 @@
-const faqs = document.querySelectorAll(".collapsible");
+const faqs = document.querySelectorAll(".collapsible-head");
 
-faqs.forEach(collapsible => {
-    collapsible.addEventListener("click", () => {
-        collapsible.classList.toggle("active");
+faqs.forEach(accordionHeader => {
+    accordionHeader.addEventListener("click", event => {
+        accordionHeader.classList.toggle("active");
+        const accordionBody = accordionHeader.nextElementSibling;
+        if(accordionHeader.classList.contains("active")) {
+            accordionBody.style.maxHeight = accordionBody.scrollHeight + 20 + "px";
+        }
+        else {
+            accordionBody.style.maxHeight = 0;
+        }
+
     })
+
 })
 
