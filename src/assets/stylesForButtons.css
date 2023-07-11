@@ -233,7 +233,7 @@ header {
 }
 
 .collapsible-head {
-  padding: 8px 46px 8px 20px;
+  padding: 8px 46px 8px 18px;
   display: -webkit-box;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -252,7 +252,7 @@ header {
 
 .collapsible-text-content {
   max-height: 4000px;
-  padding: 14px 48px 22px 48px;
+  padding: 14px 52px 22px 52px;
   border-top: 1px solid #ccc;
 }
 
