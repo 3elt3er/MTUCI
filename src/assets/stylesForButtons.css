@@ -221,23 +221,24 @@ header {
 }
 
 .collapsible {
+  text-align: justify;
   word-break: break-word;
   max-width: 100%;
   font-weight: 500;
   border: 2px solid #372579;
-  border-radius: 8px;
+  border-radius: 12px;
   -webkit-box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.05);
           box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.05);
   margin-bottom: 7px;
 }
 
 .collapsible-head {
-  padding: 8px 46px 8px 36px;
+  padding: 8px 46px 8px 20px;
   display: -webkit-box;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 18px;
+  gap: 8px;
   font-weight: 600;
   cursor: pointer;
 }
@@ -251,11 +252,8 @@ header {
 
 .collapsible-text-content {
   max-height: 4000px;
-  padding: 14px 22px 22px 30px;
-  border-top: 2px solid;
-  -o-border-image: linear-gradient(to right, transparent, #372579, transparent) 1;
-     border-image: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(#372579), to(transparent)) 1;
-     border-image: linear-gradient(to right, transparent, #372579, transparent) 1;
+  padding: 14px 48px 22px 48px;
+  border-top: 1px solid #ccc;
 }
 
 .collapsible-head.active svg {
@@ -429,12 +427,7 @@ li {
 }
 
 .collapsible-text-content-clue {
-  border-top: 1px solid;
   line-height: 1.3;
-  border-bottom: 1px solid;
-  -o-border-image: linear-gradient(to right, transparent, #63578E, transparent) 1;
-     border-image: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(#63578E), to(transparent)) 1;
-     border-image: linear-gradient(to right, transparent, #63578E, transparent) 1;
   font-weight: 400;
   -webkit-transition: max-height 0.2s ease-in-out;
   transition: max-height 0.2s ease-in-out;

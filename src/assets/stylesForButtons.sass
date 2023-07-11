@@ -181,19 +181,20 @@ header
     overflow: hidden
 
 .collapsible
+    text-align: justify
     word-break: break-word
     max-width: 100%
     font-weight: 500
     border: 2px solid #372579
-    border-radius: 8px
+    border-radius: 12px
     box-shadow: 2px 2px 20px rgba(0,0,0,0.05)
     margin-bottom: 7px
 
 .collapsible-head
-    padding: 8px 46px 8px 36px
+    padding: 8px 46px 8px 20px
     display: -webkit-box
     align-items: center
-    gap: 18px
+    gap: 8px
     font-weight: 600
     cursor: pointer
 
@@ -204,9 +205,9 @@ header
     
 .collapsible-text-content
     max-height: 4000px
-    padding: 14px 22px 22px 30px
-    border-top: 2px solid
-    border-image: linear-gradient(to right, transparent, #372579, transparent) 1
+    padding: 14px 48px 22px 48px
+    border-top: 1px solid #ccc
+    //border-image: linear-gradient(to right, transparent 6%, #ccc 6% 50%, #ccc 50% 94%, transparent 94% 100%) 1
 
 .collapsible-head.active svg
     transform: rotate(-180deg) 
@@ -330,10 +331,7 @@ li
     padding: 0 12px 2px 12px
 
 .collapsible-text-content-clue
-    border-top: 1px solid
     line-height: 1.3
-    border-bottom: 1px solid
-    border-image: linear-gradient(to right, transparent, #63578E, transparent) 1
     font-weight: 400
     transition: max-height 0.2s ease-in-out
     padding: 0 12px
