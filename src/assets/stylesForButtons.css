@@ -252,7 +252,7 @@ header {
 
 .collapsible-text-content {
   max-height: 4000px;
-  padding: 14px 52px 22px 52px;
+  padding: 14px 46px 22px 46px;
   border-top: 1px solid #ccc;
 }
 
@@ -407,6 +407,7 @@ li {
 }
 
 .collapsible-clue {
+  text-align: start;
   -webkit-box-shadow: none;
           box-shadow: none;
   border: none;
