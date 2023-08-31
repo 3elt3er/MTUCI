@@ -1,31 +1,31 @@
 @font-face {
   font-weight: 400;
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
   src: url("src/fonts/Montserrat-Regular.ttf");
 }
 @font-face {
   font-weight: 500;
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
   src: url("src/fonts/Montserrat-Medium.ttf");
 }
 @font-face {
   font-weight: 600;
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
   src: url("src/fonts/Montserrat-SemiBold.ttf");
 }
 @font-face {
   font-weight: 700;
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
   src: url("src/fonts/Montserrat-Bold.ttf");
 }
 @font-face {
   font-weight: 800;
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
   src: url("src/fonts/Montserrat-ExtraBold.ttf");
 }
 @font-face {
   font-weight: 900;
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
   src: url("src/fonts/Montserrat-Black.ttf");
 }
 a, a:link, a:visited {
