@@ -15,10 +15,16 @@ function deleteCSS(){
     console.log('deleteCSS')
 }
 
+
 document.addEventListener('DOMContentLoaded', function() {
-    if (localStorage.getItem('isDarkMode') !== 'true') {
+    if (localStorage.getItem('isDarkMode') == 'false') {
         deleteCSS()
+    } else if (localStorage.getItem('isDarkMode') == 'true') {
+        console.log('Включена темная тема из localStorage')
+    } else {
+        localStorage.setItem('isDarkMode', true)
     }
+
 });
 
 themeIcon.addEventListener('click', ()=> {
