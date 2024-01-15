@@ -1,0 +1,60 @@
+body {
+    background: #211e30;
+}
+.menu_button {
+    background: #0e0c10;
+    color: whitesmoke;
+    border: 1px solid #373737;
+}
+
+.menu_button:hover {
+    border: 1px solid #373737;
+    transform: scale(1.04);
+    transition: 0.2s;
+}
+
+#mtuci_logo {
+    display: none;
+}
+
+.paragraph {
+    font-size: 38px;
+    color: whitesmoke;
+}
+
+.header {
+    background: #2f1953;
+    color: red;
+}
+
+.developers {
+    margin-left: 230px;
+    color: whitesmoke;
+}
+
+.kostil {
+    margin-top: 0;
+}
+
+.menu {
+    gap: 26px;
+}
+.exceptionFirst {
+    gap: 26px;
+}
+
+.exceptionSecond {
+    gap: 26px;
+}
+.exception {
+    gap: 26px;
+}
+
+a:hover {
+    transform: scale(1.07);
+    transition: 0.2s;
+}
+
+.darkTheme {
+    filter: invert(1);
+}
