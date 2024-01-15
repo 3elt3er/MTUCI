@@ -108,7 +108,7 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 76%;
+  width: 80%;
   margin: auto;
   padding-top: 5px;
   padding-bottom: 30px;
@@ -179,8 +179,8 @@ header {
 .darkTheme {
   cursor: pointer;
   position: fixed;
-  bottom: 5%;
-  right: 5%;
+  bottom: 3%;
+  right: 3%;
 }
 
 #themeIcon {

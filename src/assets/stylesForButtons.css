@@ -130,12 +130,13 @@ header {
 }
 
 .container {
+  width: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   position: relative;
   padding-bottom: 30px;
-  margin: 15px 20px;
+  margin: 15px auto;
   line-height: 1.4;
   font-family: "Montserrat";
   gap: 1%;

@@ -2,7 +2,7 @@ body {
     background: #211e30;
 }
 .menu_button {
-    background: #0e0c10;
+    background: #151422;
     color: whitesmoke;
     border: 1px solid #373737;
 }
@@ -57,4 +57,39 @@ a:hover {
 
 .darkTheme {
     filter: invert(1);
+}
+
+.listQA {
+    color: whitesmoke;
+    background: #211e36;
+    border: 0px;
+}
+
+.collapsible {
+    border: 2px solid #2f1953;
+}
+
+.collapsible-clue {
+    border: 0;
+}
+
+.collapsible-text-content {
+    border-top: 1px solid #2f1953;
+}
+
+.clue {
+    color: whitesmoke;
+    background: #211e36;
+}
+
+.clueUp {
+    border: 0;
+}
+
+.clueHeader {
+    background: #2f1953;
+}
+
+.questionForm {
+    background: #2f1953;
 }

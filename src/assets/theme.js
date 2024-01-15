@@ -19,8 +19,9 @@ function deleteCSS(){
 document.addEventListener('DOMContentLoaded', function() {
     if (localStorage.getItem('isDarkMode') == 'false') {
         deleteCSS()
+        console.log('Включена светлая тема')
     } else if (localStorage.getItem('isDarkMode') == 'true') {
-        console.log('Включена темная тема из localStorage')
+        console.log('Включена темная тема')
     } else {
         localStorage.setItem('isDarkMode', true)
     }
