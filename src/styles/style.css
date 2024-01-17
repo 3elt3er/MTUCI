@@ -153,7 +153,6 @@ header {
 }
 .menu_button:active {
   background-color: rgba(34, 0, 255, 0.0666666667);
-  border: 2px solid #0D0350;
 }
 
 .exception {
