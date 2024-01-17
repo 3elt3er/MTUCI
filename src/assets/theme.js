@@ -28,12 +28,16 @@ document.addEventListener('DOMContentLoaded', function() {
 
 });
 
-themeIcon.addEventListener('click', ()=> {
-    if (localStorage.getItem('isDarkMode') === 'true') {
-        deleteCSS()
-        localStorage.setItem('isDarkMode', false)
-    } else {
-        includeCSS('blackTheme.css')
-        localStorage.setItem('isDarkMode', true)
-    }
-})
+const themeIcon = document.getElementById('themeIcon');
+
+if (themeIcon) {
+    themeIcon.addEventListener('click', ()=> {
+        if (localStorage.getItem('isDarkMode') === 'true') {
+            deleteCSS()
+            localStorage.setItem('isDarkMode', false)
+        } else {
+            includeCSS('blackTheme.css')
+            localStorage.setItem('isDarkMode', true)
+        }
+    })
+}
