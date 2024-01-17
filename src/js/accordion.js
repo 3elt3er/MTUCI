@@ -1,7 +1,7 @@
 const faqs = document.querySelectorAll(".collapsible-head");
 
 faqs.forEach(accordionHeader => {
-    accordionHeader.addEventListener("click", event => {
+    accordionHeader.addEventListener("click", () => {
         accordionHeader.classList.toggle("active");
         const accordionBody = accordionHeader.nextElementSibling;
         if(accordionHeader.classList.contains("active")) {
