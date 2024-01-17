@@ -1,0 +1,100 @@
+body {
+    background: #211e30;
+}
+.menu_button {
+    background: #151422;
+    color: whitesmoke;
+    border: 1px solid #373737;
+}
+
+.menu_button:hover {
+    border: 1px solid #373737;
+    transform: scale(1.04);
+    transition: 0.2s;
+}
+
+#mtuci_logo {
+    filter: drop-shadow(2px 4px 6px black);
+}
+
+.paragraph {
+    font-size: 38px;
+    color: whitesmoke;
+}
+
+.header {
+    background: #2f1953;
+    color: red;
+}
+
+.developers {
+    margin-left: 0;
+    color: whitesmoke;
+}
+
+.kostil {
+    margin-top: 0;
+}
+
+.menu {
+    gap: 26px;
+}
+.exceptionFirst {
+    gap: 26px;
+}
+
+.exceptionSecond {
+    gap: 26px;
+}
+.exception {
+    gap: 26px;
+}
+
+a:hover {
+    transform: scale(1.07);
+    transition: 0.2s;
+}
+
+.darkTheme {
+    filter: invert(1);
+}
+
+.listQA {
+    color: whitesmoke;
+    background: #151422;
+    border: 0px;
+}
+
+.collapsible {
+    border: 2px solid #2f1953;
+}
+
+.collapsible-clue {
+    border: 0;
+}
+
+.collapsible-text-content {
+    border-top: 1px solid #2f1953;
+}
+
+.clue {
+    color: whitesmoke;
+    background: #151422;
+}
+
+.clueUp {
+    border: 0;
+}
+
+.clueHeader {
+    background: #2f1953;
+}
+
+.questionForm {
+    background: #2f1953;
+}
+
+#arrow-back:hover {
+    transform: scale(1.2);
+    transition: 0.2s;
+}

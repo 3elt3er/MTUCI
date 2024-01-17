@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Knowledge base for MTUCI">
+        <meta name="keywords" content="html, css, Knowledge base, Adilgereev Artem" >
+        <meta name="author" content="MTUCI"> 
+
+        <meta property="og:title" content="Knowledge Base Telemarketing">
+        <meta property="og:description" content="Knowledge base for Telemarketing">
+        <meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/%D0%9B%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF.svg/1200px-%D0%9B%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF.svg.png">
+        <meta property="og:url" content="https://3elt3er.github.io/MTUCI/">
+
+        <title>Скрипт ПО ЕГЭ (исходящий)</title>
+        <link rel="shortcut icon" type="image/x-icon" href="../assets/favicon.ico">
+        <link rel="stylesheet" href="../styles/stylesForButtons.css"/>
+        <link rel="stylesheet" href="../styles/blackTheme.css" id="theme">
+    </head>
+    <body>
+        <header class="header">
+            <div class="back">
+                <a href="../../index.html">
+                    <img
+                    src="../assets/arrow-back.png"
+                    alt="Ошибка отображения кнопки назад" 
+                    id="arrow-back"
+                    />
+                </a>
+            </div>
+            <div class="upper">Скрипт по ЕГЭ (исходящий звонок)</div>
+            <div class="third">Поиск Ctrl + F</div>
+        </header>
+        <div class="container">
+            <div class="listQA">
+                <p>- Добрый день! (имя собеседника)</p>
+                <p>- Меня зовут ____________, я звоню из университета связи и информатики, МТУСИ.</p>
+                <p>- Хотел(а) бы побеседовать с вами насчет подготовки к ЕГЭ.</p>
+                <p>- Подскажите, пожалуйста, какие предметы вы выбрали для сдачи ЕГЭ? /  какие предметы решили сдавать?</p>
+                <p class="stronger">Важно! Не задавать вопрос «вы уже выбрали, какие предметы будете сдавать?» На этот вопрос 99% людей отвечает «да» или «нет» и молчат.</p>
+                <p>- Отлично! Хотел(а) бы сообщить, что наш университет проводит подготовительные курсы по данным предметам и мы хотели бы пригласить вас на них.</p>
+                <p>- Наши курсы идут на протяжении всего учебного года – стартуем в конце сентября, заканчиваем в середине мая, всего будет проведено 32 учебных занятия.</p>
+                <p>- Курсы проходят очно, по выходным по адресу ул. Авиамоторная 8А, главный корпус нашего университета, в пешей доступности от ст.м. Авиамоторная</p>
+                <p>- Наши преподаватели – это сотрудники ведущих московских школ и лицеев, которые ежегодно подтверждают свою квалификацию, сдавая независимую диагностику Московского центра качества образования в виде ЕГЭ и ОГЭ. Обязательным требованиям для преподавателей является экспертный уровень ЕГЭ и ОГЭ (от 85 до 100 баллов).</p>
+                <p>- Курсы практикоориентированы на сдачу ЕГЭ/ОГЭ – будет много полезной информации, домашних и контрольных работ.</p>
+                <p>- Стоимость одного курса по одному предмету составляет 52 000 руб., при этом оплата производится ежемесячно фиксированным платежом по 6 500 руб. за один предмет.</p>
+                <p>- Подскажите, пожалуйста, вам интересен такой вариант подготовки?</p>
+                <p><b>(если нет)</b> – что ж, в любом случае, больше спасибо, что уделили мне время, всего доброго!</p>
+                <p>Если вдруг передумаете – перезвоните, пожалуйста, по этому номеру</p>
+                <p><b>(если надо подумать)</b> – хорошо, подскажите, пожалуйста, когда вам будет удобно, чтобы я вам перезвонил(а) и уточнил ваше итоговое решение?</p>
+                <p><b>(если да)</b> - Отлично, тогда, я передам ваш номер телефона нашему менеджеру и он свяжется с вами в ближайшее время для уточнения времени для записи.</p>
+            </div>
+            <div class="clue">
+                <div class="clueUp">
+                    <div class="clueHeader">
+                        Список необходимых вопросов
+                    </div>
+                    <div class="clueText">
+                        <div class="collapsible collapsible-clue">
+                            <div class="collapsible-head collapsible-head-clue">                       
+                                <p>1. Приветствие</p>
+                            </div>
+                            <div class="collapsible-text collapsible-text-clue">
+                                <div class="collapsible-text-content-clue">
+                                    <p>Добрый день (Имя)! Меня зовут..., я являюсь представителем Московского технического университета связи и информатики! Звоню Вам с целью составления индивидуальной траектории Вашего поступления.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="collapsible collapsible-clue">
+                            <div class="collapsible-head collapsible-head-clue">                       
+                                <p>2. Уточнить ФИО</p>
+                            </div>
+                            <div class="collapsible-text collapsible-text-clue">
+                                <div class="collapsible-text-content-clue">
+                                    <p>Подскажите, пожалуйста, как могу к Вам обращаться?</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="collapsible collapsible-clue">
+                            <div class="collapsible-head collapsible-head-clue">                       
+                                <p>3. Узнать вопрос</p>
+                            </div>
+                            <div class="collapsible-text collapsible-text-clue">
+                                <div class="collapsible-text-content-clue">
+                                    <p>Подскажите, пожалуйста, какой у Вас вопрос?</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="collapsible collapsible-clue">
+                            <div class="collapsible-head collapsible-head-clue">                       
+                                <p>4. Колледж/школа</p>
+                            </div>
+                            <div class="collapsible-text collapsible-text-clue">
+                                <div class="collapsible-text-content-clue">
+                                    <p>Какой набор предметов планируете сдавать?</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="collapsible collapsible-clue">
+                            <div class="collapsible-head collapsible-head-clue">                       
+                                <p>5. Направление</p>
+                            </div>
+                            <div class="collapsible-text collapsible-text-clue">
+                                <div class="collapsible-text-content-clue">
+                                    <p>Подскажите, пожалуйста, Вы уже определились с будущей профессией? Позвольте мне вам немного рассказать про университет и не большую подборку направлений подготовки, которая Вам подойдет?</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="collapsible collapsible-clue">
+                            <div class="collapsible-head collapsible-head-clue">                       
+                                <p>6. Какие баллы?</p>
+                            </div>
+                            <div class="collapsible-text collapsible-text-clue">
+                                <div class="collapsible-text-content-clue">
+                                    <p>Подскажите, пожалуйста, сколько баллов вы набрали по вашим экзаменам?</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="collapsible collapsible-clue">
+                            <div class="collapsible-head collapsible-head-clue">                       
+                                <p>7. Как и когда удобно подать документы?</p>
+                            </div>
+                            <div class="collapsible-text collapsible-text-clue">
+                                <div class="collapsible-text-content-clue">
+                                    <p>Давайте уточним, как Вам удобнее подать документы очно или дистанционно?</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="collapsible collapsible-clue">
+                            <div class="collapsible-head collapsible-head-clue">                       
+                                <p>8. Пригласить на мероприятия</p>
+                            </div>
+                            <div class="collapsible-text collapsible-text-clue">
+                                <div class="collapsible-text-content-clue">
+                                    <p>Также, хотели бы Вас пригласить на (мероприятие).</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="collapsible collapsible-clue">
+                            <div class="collapsible-head collapsible-head-clue">                       
+                                <p>* Форма обучения</p>
+                            </div>
+                            <div class="collapsible-text collapsible-text-clue">
+                                <div class="collapsible-text-content-clue">
+                                    <p>На какой форме хотите обучаться?</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="clueDown">
+                    <form action="segmentation.html"><button class="questionForm">Формулировка вопросов</button></form>
+                </div>
+            </div>
+        </div>
+        <script src="../js/accordion.js"></script>
+        <script src="../js/theme.js"></script>
+    </body>
+</html>
