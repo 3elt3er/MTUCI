@@ -1,0 +1,9 @@
+.buttonGrid2x2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+}
+
+.buttonGrid3x3 {
+    grid-template-columns: 1fr 1fr 1fr;
+}

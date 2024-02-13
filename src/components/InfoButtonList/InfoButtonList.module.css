@@ -1,0 +1,23 @@
+.infoButton {
+    display: flex;
+    justify-content: space-between;
+    gap: 16%;
+}
+
+.infoBlock {
+    margin: auto 0;
+    vertical-align: central;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.infoHeader{
+    font-size: 44px;
+    font-weight: 500;
+}
+
+.infoText {
+    font-size: 22px;
+    font-weight: 400;
+}

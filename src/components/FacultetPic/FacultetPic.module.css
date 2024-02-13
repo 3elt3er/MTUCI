@@ -1,0 +1,32 @@
+.main {
+    color: white;
+    margin-bottom: 90px;
+}
+
+.headerAccordion {
+    text-align: center;
+    margin: 10% 0 4%;
+    font-size: 46px;
+    font-weight: 500;
+}
+
+.picture {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+
+}
+
+.header {
+    margin-top: 5%;
+    font-size: 62px;
+    position: relative;
+    z-index: 10;
+}
+
+.description {
+    font-size: 28px;
+    position: relative;
+    z-index: 1;
+}

@@ -1,0 +1,46 @@
+.accordionItem {
+    margin-bottom: 0.6em;
+    border-radius: 14px;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.4);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    word-break: break-word;
+}
+.accordionItem:hover {
+    cursor: pointer;
+    scale: 1.008;
+}
+
+.accordionHeader:focus-visible {
+    outline: 2px solid #372579;
+}
+
+.accordionHeader {
+    display: flex;
+    width: 100%;
+    border: 0;
+    padding: 0.7em 4em 0.7em 1em;
+    border-radius: inherit;
+    background: #fff;
+    text-align: left;
+    font-size: 22px;
+    font-weight: 500;
+    cursor: pointer;
+    gap: 1em;
+}
+
+.accordionBody {
+    padding: 0 4em 0.6em 3.4em;
+    font-weight: 400;
+}
+.accordionCollapse {
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s;
+}
+
+.collapsibleArrow {
+    margin-top: 5px;
+    transition: transform 0.2s linear;
+}
+

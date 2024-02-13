@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+ul {
+    list-style-type: none;
+}
+
+button {
+    border: 0;
+    font-weight: inherit;
+    font-size: inherit;
+    background: inherit;
+    cursor: pointer;
+}
+
+.App {
+    text-align: justify;
+
+}
+
+.window {
+    padding: 300px 0;
+    height: 1000px;
+
+}
+
+.arrowUp {
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+}
+
+.picture {
+    position: absolute;
+    top: 103%;
+    z-index: 0;
+    left: 0;
+}
+
+#picture {
+    color: #fff;
+}
+
+.text {
+    position: relative;
+    flex-direction: column;
+    z-index: 1;
+}
