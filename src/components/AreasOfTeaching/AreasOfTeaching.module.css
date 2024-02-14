@@ -1,0 +1,14 @@
+.areasOfTeaching {
+    padding-bottom: 20px ;
+    position: relative;
+    width: 900px;
+    margin: 0 auto;
+}
+
+h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 44px;
+    font-weight: 500;
+    color: white;
+}

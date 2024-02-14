@@ -6,7 +6,7 @@
 }
 
 .container {
-    max-width: 1200px;
+    /*max-width: 1200px;*/
     margin: 0 auto;
 }
 
@@ -28,9 +28,14 @@ button {
 }
 
 .window {
-    padding: 300px 0;
-    height: 1000px;
-
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    max-width: 80vw;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
 }
 
 .arrowUp {
@@ -39,19 +44,12 @@ button {
     right: 5%;
 }
 
-.picture {
-    position: absolute;
-    top: 103%;
-    z-index: 0;
-    left: 0;
-}
+
 
 #picture {
-    color: #fff;
-}
-
-.text {
-    position: relative;
-    flex-direction: column;
-    z-index: 1;
+    background-image: url("/public/mainPicture.jpg");
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 100%; /* Минимальная ширина изображения на всю ширину экрана */
+    min-height: 100%; /* Минимальная высота изображения на всю высоту экрана */
 }
