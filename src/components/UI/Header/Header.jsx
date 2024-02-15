@@ -1,16 +1,25 @@
 import { useMemo } from "react";
 import classes from "./Header.module.css";
 
-export default function Header({...props}) {
+// eslint-disable-next-line react/prop-types
+export default function Header({ arrowBack, contains, onClick, id }) {
   const headerText = useMemo(() => {
-    return props.contains.map(item => <button className={classes.button} key={item}>{item}</button>)
-  }, [props])
+    // eslint-disable-next-line react/prop-types
+    return contains.map((item, index) => (
+      <button onClick={() => onClick(id[index])} className={classes.button} key={item}>
+        {item}
+      </button>
+    ));
+  }, [contains, onClick]);
+
   return (
     <header className={classes.header}>
-      {
-        props.arrowBack ? <button className={classes.button}><img className={classes.arrow} src="./arrowBack.png" alt="Стрелка назад"/></button> : console.log('Нет стрелки')
-      }
+      {arrowBack && (
+        <button className={classes.button}>
+          <img className={classes.arrow} src="./arrowBack.png" alt="Стрелка назад" />
+        </button>
+      )}
       {headerText}
     </header>
-  )
+  );
 }

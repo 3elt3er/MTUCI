@@ -21,3 +21,7 @@
     transform: scale(1.05);
     transition: 0.1s ease;
 }
+
+.button:active {
+    transform: scale(1);
+}

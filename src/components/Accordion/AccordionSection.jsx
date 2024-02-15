@@ -2,7 +2,7 @@ import AccordionItem from "./AccordionItem.jsx";
 import { useState } from "react";
 import classes from "./AccordionItem.module.css";
 
-export default function AccordionSection({ infoBlock, isAreaTeaching}) {
+export default function AccordionSection({ infoBlock, header, isAreaTeaching}) {
   const [openIds, setOpenIds] = useState([]);
 
   const toggleAccordion = (id) => {
@@ -14,18 +14,21 @@ export default function AccordionSection({ infoBlock, isAreaTeaching}) {
   };
 
   return (
-    <ul className={classes.accordion}>
-      {infoBlock.map((item, id) => (
-        <AccordionItem
-          onClick={() => toggleAccordion(id)}
-          key={id}
-          isOpen={openIds.includes(id)}
-          openIds={openIds}
-          id={id}
-          isAreaTeaching={isAreaTeaching}
-          {...item}
-        />
-      ))}
-    </ul>
+    <div className={classes.accordion}>
+      <h3 className={classes.header}>{header}</h3>
+      <ul className={classes.ul}>
+        {infoBlock.map((item, id) => (
+          <AccordionItem
+            onClick={() => toggleAccordion(id)}
+            key={id}
+            isOpen={openIds.includes(id)}
+            openIds={openIds}
+            id={id}
+            isAreaTeaching={isAreaTeaching}
+            {...item}
+          />
+        ))}
+      </ul>
+    </div>
   );
 }

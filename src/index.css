@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
 }
 
 .container {
@@ -23,7 +24,7 @@ button {
 }
 
 .App {
-    text-align: justify;
+
 
 }
 
@@ -36,6 +37,10 @@ button {
     margin: 0 auto;
     align-items: center;
     justify-content: center;
+}
+
+.noHeightLimit {
+    height: auto;
 }
 
 .arrowUp {
