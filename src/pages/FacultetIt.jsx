@@ -4,7 +4,7 @@ import AccordionSection from "../components/Accordion/AccordionSection.jsx";
 import {activities, facultetIT} from "../data.js";
 import AreasOfTeaching from "../components/AreasOfTeaching/AreasOfTeaching.jsx";
 import FacultetPic from "../components/FacultetPic/FacultetPic.jsx";
-import classes from "./FacultetIt.module.css";
+import classes from "./Facultet.module.css";
 import React from "react";
 
 
@@ -17,7 +17,7 @@ const FacultetIt = () => {
         id={['facultet']}
         onClick={null}
       />
-      <div className="window" id={classes.pictureIT}>
+      <div className={`window ${classes.picture}`} id={classes.picIt}>
         <FacultetPic
           header={'Факультет "Информационные технологии"'}
           description={'Факультет ИТ базируется на трековом развитии студентов, это значит, что студенты имеют ' +

@@ -1,0 +1,28 @@
+.picture {
+    margin-top: 7.1vh;
+    height: 50vh;
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 100%; /* Минимальная ширина изображения на всю ширину экрана */
+    min-height: 100%; /* Минимальная высота изображения на всю высоту экрана */
+}
+
+#picIt {
+    background-image: url("/public/facultetIT.svg");
+}
+
+#picCimk {
+    background-image: url("/public/facultetCimk.svg");
+}
+
+#picSis {
+    background-image: url("/public/facultetSis.svg");
+}
+
+#picKiib {
+    background-image: url("/public/facultetKiib.svg");
+}
+
+#picRit {
+    background-image: url("/public/facultetRit.svg");
+}

@@ -10,7 +10,7 @@ const AreasOfTeaching = () => {
   };
 
   return (
-    <>
+    <div className={classes.flexBox}>
       <div className={classes.areasOfTeaching}>
         <h2>Очный бакалавриат</h2>
         <ButtonList style={whiteButtonStyles} children={['ИТ', 'КиИБ', "Рит", "СиСС", "ЦЭиМК"]}/>
@@ -23,7 +23,7 @@ const AreasOfTeaching = () => {
         <h2>Магистратура</h2>
         <ButtonList style={whiteButtonStyles} children={['Заочное', 'Ускоренное ', "Очно-заочное "]}/>
       </div>
-    </>
+    </div>
   );
 };
 
