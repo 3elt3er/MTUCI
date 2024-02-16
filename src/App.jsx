@@ -5,6 +5,7 @@ import DovuzEge from "./pages/DovuzEge.jsx";
 import FacultetCimk from "./pages/FacultetCimk.jsx";
 import FacultetSis from "./pages/FacultetSis.jsx";
 import FacultetRit from "./pages/FacultetRit.jsx";
+import MagaZaoch from "./pages/MagaZaoch.jsx";
 
 function App() {
 
@@ -13,10 +14,11 @@ function App() {
     <div className="App">
       {/*<MainPage/>*/}
       {/*<FacultetIt/>*/}
-      <FacultetSis/>
+      {/*<FacultetSis/>*/}
       {/*<FacultetRit/>*/}
       {/*<DovuzEge/>*/}
       {/*<FacultetCimk/>*/}
+      <MagaZaoch/>
     </div>
   );
 }
