@@ -50,10 +50,16 @@ button {
     margin: 0 auto;
     align-items: center;
     justify-content: center;
+    background-size: cover;
+    background-position: center;
 }
 
 .noHeightLimit {
     height: auto;
+}
+
+.noLimitMarginTop {
+    margin-top: 10vh;
 }
 
 .arrowUp {
