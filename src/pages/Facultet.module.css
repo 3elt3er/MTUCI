@@ -1,5 +1,4 @@
 .picture {
-    margin-top: 7.1vh;
     height: 50vh;
     /*left: 50%;*/
     /*transform: translateX(-50%);*/
@@ -8,23 +7,23 @@
 }
 
 #picIt {
-    background-image: url("/public/facultetIT.svg");
+    background-image: url("/public/facultetIT.jpg");
 }
 
 #picCimk {
-    background-image: url("/public/facultetCimk.svg");
+    background-image: url("/public/facultetCimk.jpg");
 }
 
 #picSis {
-    background-image: url("/public/facultetSis.svg");
+    background-image: url("/public/facultetSis.jpg");
 }
 
 #picKiib {
-    background-image: url("/public/facultetKiib.svg");
+    background-image: url("/public/facultetKiib.jpg");
 }
 
 #picRit {
-    background-image: url("/public/facultetRit.svg");
+    background-image: url("/public/facultetRit.jpg");
 }
 
 #picMagZaoch {

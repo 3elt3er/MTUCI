@@ -1,7 +1,10 @@
 .button {
+    display: flex;
     padding: 0.5em 0.8em;
     height: 105px;
     text-align: center;
+    align-items: center;
+    justify-content: center;
     border: 2px solid #372579;
     border-radius: 14px;
     box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.39);
@@ -10,6 +13,23 @@
     font-weight: 400;
     transition: 0.2s ease;
 }
+
+/*.button {*/
+/*    display: inline-block; !* Сделать ссылку блочным элементом *!*/
+/*    padding: 0.5em 0.8em;*/
+/*    height: 105px;*/
+/*    text-align: center;*/
+/*    border: 2px solid #372579;*/
+/*    border-radius: 14px;*/
+/*    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.39);*/
+/*    font-family: 'Montserrat', sans-serif;*/
+/*    font-size: 22px;*/
+/*    font-weight: 400;*/
+/*    transition: 0.2s ease;*/
+/*    text-decoration: none; !* Убираем подчеркивание *!*/
+/*    color: inherit; !* Наследуем цвет текста *!*/
+/*}*/
+
 
 .button:hover {
     cursor: pointer;

@@ -18,7 +18,7 @@ const Scripts = () => {
         id={['scripts']}
         onClick={executeScroll}
       />
-      <div className="window noHeightLimit noLimitMarginTop" id='scripts'>
+      <div className="window noHeightLimit" id='scripts'>
         <AccordionSection infoBlock={scripts} header='Скрипты для разговора' isAreaTeaching={false}/>
       </div>
     </div>

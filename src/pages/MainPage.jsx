@@ -16,7 +16,6 @@ const MainPage = () => {
   };
 
   const hideArrow = () => {
-    console.log(window.scrollY)
     window.scrollY < 300 ? arrowRef.current.style.opacity = '0' : arrowRef.current.style.opacity = '1'
   }
 
@@ -42,9 +41,19 @@ const MainPage = () => {
             infoHeader='Блок “FAQ”'
             infoText='Общие вопросы по поступлению в 2023 году'
           >
-            {['Подача документов', 'Бюджет и БВИ', 'Платное и целевое обучение','Индивид. достижения',
-              'Поступление по квотам', 'Учебный процесс и активности', 'Вопросы по общежитию', 'Отсрочка от армии',
-              'Номера отделов']}
+            {
+              [
+                { text: 'Подача документов', to: '/submission' },
+                { text: 'Бюджет и БВИ', to: '/budget-bvi'},
+                { text: 'Платное и целевое обучение', to: '/paid-training'},
+                { text: 'Индивид. достижения', to: '/individual-achievements'},
+                { text: 'Поступление по квотам', to: '/quotas'},
+                { text: 'Учебный процесс и активности', to: '/activities'},
+                { text: 'Вопросы по общежитию', to: '/hostel'},
+                { text: 'Отсрочка от армии', to: '/deferment'},
+                { text: 'Номера отделов', to: '/numbers'},
+              ]
+            }
           </InfoButtonList>
         </div>
         <div className="window" id='picture'>
@@ -55,7 +64,12 @@ const MainPage = () => {
             infoHeader='Блок "Скрипты"'
             infoText='Для сотрудников отдела телемаркетинга'
           >
-            {['Скрипты для разговора', 'Вопросы верификации']}
+            {
+              [
+                {text: 'Скрипты для разговора', to: '/scripts'},
+                {text: 'Вопросы верификации', to: '/verification'}
+              ]
+            }
           </InfoButtonList>
         </div>
         <div className="window" id='dovuz'>

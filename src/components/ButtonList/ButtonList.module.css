@@ -15,7 +15,7 @@
     flex-wrap: wrap;
 }
 
-.buttonFlex button {
+.buttonFlex a {
     flex: 1 1;
     min-width: 0; /* чтобы кнопки могли сжиматься */
     margin: 0.5em; /* отступ между кнопками */

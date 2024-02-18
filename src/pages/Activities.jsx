@@ -12,8 +12,11 @@ import {
   strategy, supplyUniversity,
   workPriem
 } from "../data.js";
+import {useEffect} from "react";
 
 const Activities = () => {
+
+
   const executeScroll = (sectionId) => {
     const section = document.getElementById(sectionId);
     if (section) {
@@ -36,7 +39,7 @@ const Activities = () => {
       {/*    {['Работа приемной комиссии', 'Вопросы по документам', 'Правила приема 2023', 'Процесс подачи документов']}*/}
       {/*  </InfoButtonList>*/}
       {/*</div>*/}
-      <div className="window noHeightLimit noLimitMarginTop" id='first'>
+      <div className="window noHeightLimit" id='first'>
         <AccordionSection infoBlock={formats} header='Форматы обучения' isAreaTeaching={false}/>
       </div>
       <div className="window noHeightLimit" id='second'>

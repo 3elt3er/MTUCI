@@ -2,13 +2,13 @@
     top: 0;
     padding: 1.4vh 10vw;
     display: flex;
-    position: fixed;
+    position: sticky;
     width: 100%;
     justify-content: space-between;
     border-radius: 0 0 14px 14px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
     background: #FFF;
-    z-index: 1;
+    z-index: 100;
     font-size: 22px;
     font-weight: 500;
 }

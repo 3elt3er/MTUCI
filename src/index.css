@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
-    scroll-behavior: smooth;
 }
 
 *::-webkit-scrollbar {
@@ -36,6 +35,19 @@ button {
     cursor: pointer;
 }
 
+a {
+    text-decoration: none; /* Убираем подчеркивание ссылок */
+    color: inherit; /* Наследуем цвет текста */
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
 .App {
 
 
@@ -56,10 +68,6 @@ button {
 
 .noHeightLimit {
     height: auto;
-}
-
-.noLimitMarginTop {
-    margin-top: 10vh;
 }
 
 .arrowUp {

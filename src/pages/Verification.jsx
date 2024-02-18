@@ -18,7 +18,7 @@ const Verification = () => {
         id={['verification']}
         onClick={executeScroll}
       />
-      <div className="window noHeightLimit noLimitMarginTop" id='verification'>
+      <div className="window noHeightLimit" id='verification'>
         <AccordionSection infoBlock={questionVerification} header='Вопросы для верификации' isAreaTeaching={false}/>
       </div>
     </div>

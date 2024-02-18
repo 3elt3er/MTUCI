@@ -5,7 +5,7 @@ import {activities, facultetIT} from "../data.js";
 import AreasOfTeaching from "../components/AreasOfTeaching/AreasOfTeaching.jsx";
 import FacultetPic from "../components/FacultetPic/FacultetPic.jsx";
 import classes from "./Facultet.module.css";
-import React from "react";
+import React, {useEffect} from "react";
 
 
 const FacultetIt = () => {
@@ -14,7 +14,7 @@ const FacultetIt = () => {
       <Header
         arrowBack={true}
         contains={['Факультет ИТ']}
-        id={['facultet']}
+        id={['']}
         onClick={null}
       />
       <div className={`window ${classes.picture}`} id={classes.picIt}>

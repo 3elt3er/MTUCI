@@ -1,5 +1,6 @@
 import { useMemo } from "react";
 import classes from "./Header.module.css";
+import {Link} from "react-router-dom";
 
 // eslint-disable-next-line react/prop-types
 export default function Header({ arrowBack, contains, onClick, id }) {
@@ -15,9 +16,9 @@ export default function Header({ arrowBack, contains, onClick, id }) {
   return (
     <header className={classes.header}>
       {arrowBack && (
-        <button className={classes.button}>
+        <Link to='/' className={classes.button}>
           <img className={classes.arrow} src="./arrowBack.svg" alt="Стрелка назад" />
-        </button>
+        </Link>
       )}
       {headerText}
     </header>

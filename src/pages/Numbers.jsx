@@ -36,7 +36,7 @@ const Numbers = () => {
       {/*    {['Работа приемной комиссии', 'Вопросы по документам', 'Правила приема 2023', 'Процесс подачи документов']}*/}
       {/*  </InfoButtonList>*/}
       {/*</div>*/}
-      <div className="window noHeightLimit noLimitMarginTop" id='first'>
+      <div className="window noHeightLimit" id='first'>
         <AccordionSection infoBlock={numbers} header='Номера отделов' isAreaTeaching={false}/>
       </div>
     </>
