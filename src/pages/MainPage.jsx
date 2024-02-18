@@ -3,14 +3,31 @@ import InfoButtonList from "../components/InfoButtonList/InfoButtonList.jsx";
 import AreasOfTeaching from "../components/AreasOfTeaching/AreasOfTeaching.jsx";
 import CardSection from "../components/CardSection/CardSection.jsx";
 import MyFooter from "../components/UI/Footer/MyFooter.jsx";
+import {useEffect, useRef} from "react";
 
 const MainPage = () => {
+
+  const arrowRef = useRef(null)
   const executeScroll = (sectionId) => {
     const section = document.getElementById(sectionId);
     if (section) {
       section.scrollIntoView({ behavior: "smooth" });
     }
   };
+
+  const hideArrow = () => {
+    console.log(window.scrollY)
+    window.scrollY < 300 ? arrowRef.current.style.opacity = '0' : arrowRef.current.style.opacity = '1'
+  }
+
+  useEffect(() => {
+    window.addEventListener("scroll", hideArrow);
+    return () => {
+      window.removeEventListener("scroll", hideArrow);
+    };
+  }, []);
+
+
   return (
     <>
       <Header
@@ -51,7 +68,7 @@ const MainPage = () => {
       </div>
       <MyFooter/>
       <button onClick={() => executeScroll('FAQ')}>
-        <img className='arrowUp' src="/../public/arrowUp.svg" alt="Стрелка вверх"/>
+        <img ref={arrowRef} className='arrowUp' src="/../public/arrowUp.svg" alt="Стрелка вверх"/>
       </button>
     </>
   );

@@ -16,25 +16,27 @@ import DovuzOge from "./pages/DovuzOge.jsx";
 import DovuzVi from "./pages/DovuzVi.jsx";
 import Verification from "./pages/Verification.jsx";
 import Scripts from "./pages/Scripts.jsx";
+import BudgetKvot from "./pages/BudgetKvot.jsx";
+import Numbers from "./pages/Numbers.jsx";
 
 function App() {
-
-
   return (
     <div className="App">
-      {/*<MainPage/>*/}
+      <MainPage/>
       {/*<FacultetIt/>*/}
       {/*<FacultetSis/>*/}
       {/*<FacultetRit/>*/}
       {/*<DovuzVi/>*/}
       {/*<Scripts/>*/}
-      <Verification/>
+      {/*<Verification/>*/}
       {/*<FacultetCimk/>*/}
       {/*<MagaOchZaoch/>*/}
       {/*<FacultetZaoch/>*/}
       {/*<FacultetOchZaoch/>*/}
       {/*<FacultetFastZaoch/>*/}
       {/*<SubmissionPage/>*/}
+      {/*<BudgetKvot/>*/}
+      {/*<Numbers/>*/}
     </div>
   );
 }

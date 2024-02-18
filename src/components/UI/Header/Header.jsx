@@ -16,7 +16,7 @@ export default function Header({ arrowBack, contains, onClick, id }) {
     <header className={classes.header}>
       {arrowBack && (
         <button className={classes.button}>
-          <img className={classes.arrow} src="./arrowBack.png" alt="Стрелка назад" />
+          <img className={classes.arrow} src="./arrowBack.svg" alt="Стрелка назад" />
         </button>
       )}
       {headerText}

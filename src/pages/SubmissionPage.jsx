@@ -1,7 +1,7 @@
 import InfoButtonList from "../components/InfoButtonList/InfoButtonList.jsx";
 import Header from "../components/UI/Header/Header.jsx";
 import AccordionSection from "../components/Accordion/AccordionSection.jsx";
-import {activities} from "../data.js";
+import {activities, documentsQA, otherSubmission, rules, workPriem} from "../data.js";
 
 const SubmissionPage = () => {
   const executeScroll = (sectionId) => {
@@ -15,22 +15,28 @@ const SubmissionPage = () => {
       <Header
         arrowBack={true}
         contains={['Работа ПК', 'Документы', 'Прием 2023', 'Подача']}
-        id={['workPK', 'documents', 'admission', 'supply']}
+        id={['workPK', 'documents', 'rules', 'process']}
         onClick={executeScroll}
       />
-      <div className="window">
-        <InfoButtonList
-          infoHeader='Вопросы по подаче документов'
-          infoText='А также работе приемной комиссии'
-        >
-          {['Работа приемной комиссии', 'Вопросы по документам', 'Правила приема 2023', 'Процесс подачи документов']}
-        </InfoButtonList>
-      </div>
-      <div className="window noHeightLimit" id='workPK'>
-        <AccordionSection infoBlock={activities} header='Работа приемной комиссии' isAreaTeaching={false}/>
+      {/*<div className="window">*/}
+      {/*  <InfoButtonList*/}
+      {/*    infoHeader='Вопросы по подаче документов'*/}
+      {/*    infoText='А также работе приемной комиссии'*/}
+      {/*  >*/}
+      {/*    {['Работа приемной комиссии', 'Вопросы по документам', 'Правила приема 2023', 'Процесс подачи документов']}*/}
+      {/*  </InfoButtonList>*/}
+      {/*</div>*/}
+      <div className="window noHeightLimit noLimitMarginTop       " id='workPK'>
+        <AccordionSection infoBlock={workPriem} header='Работа приемной комиссии' isAreaTeaching={false}/>
       </div>
       <div className="window noHeightLimit" id='documents'>
-        <AccordionSection infoBlock={activities} header='Работа приемной комиссии' isAreaTeaching={false}/>
+        <AccordionSection infoBlock={documentsQA} header='Вопросы по документам' isAreaTeaching={false}/>
+      </div>
+      <div className="window noHeightLimit" id='rules'>
+        <AccordionSection infoBlock={rules} header='Правила приема 2023' isAreaTeaching={false}/>
+      </div>
+      <div className="window noHeightLimit" id='process'>
+        <AccordionSection infoBlock={otherSubmission} header='Процесс поступления и другое' isAreaTeaching={false}/>
       </div>
     </>
   );
