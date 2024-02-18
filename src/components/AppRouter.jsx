@@ -44,7 +44,7 @@ const AppRouter = () => {
       <ScrollToTop/>
       <div className="App">
         <Routes>
-          <Route path="/" element={<MainPage/>}/>
+          <Route path="/*" element={<MainPage/>}/>
           <Route path="/submission" element={<SubmissionPage/>}/>
           <Route path="/budget-bvi" element={<BudgetKvot/>}/>
           <Route path="/paid-training" element={<PaidTraining/>}/>
@@ -70,7 +70,7 @@ const AppRouter = () => {
           <Route path="/dovuz-ege" element={<DovuzEge/>}/>
           <Route path="/dovuz-oge" element={<DovuzOge/>}/>
           <Route path="/dovuz-vi" element={<DovuzVi/>}/>
-          <Route path="/*" element={<Error/>}/>
+          {/*<Route path="/*" element={<Error/>}/>*/}
     </Routes>
       </div>
 </Router>
