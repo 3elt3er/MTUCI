@@ -1,0 +1,16 @@
+<svg width="78" height="78" viewBox="0 0 78 78" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g filter="url(#filter0_d_342_5)">
+        <circle cx="39" cy="35" r="35" fill="white"/>
+        <circle cx="39" cy="35" r="34.5" stroke="#E2E2E2"/>
+    </g>
+    <path
+            d="M40.4142 24.5858C39.6332 23.8047 38.3668 23.8047 37.5858 24.5858L24.8579 37.3137C24.0768 38.0948 24.0768 39.3611 24.8579 40.1421C25.6389 40.9232 26.9052 40.9232 27.6863 40.1421L39 28.8284L50.3137 40.1421C51.0948 40.9232 52.3611 40.9232 53.1421 40.1421C53.9232 39.3611 53.9232 38.0948 53.1421 37.3137L40.4142 24.5858ZM41 28V26H37V28H41Z"
+            fill="#372579"/>
+    <defs>
+        <filter id="filter0_d_342_5" x="0" y="0" width="78" height="78" filterUnits="userSpaceOnUse"
+                color-interpolation-filters="sRGB">
+            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_342_5"/>
+            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_342_5" result="shape"/>
+        </filter>
+    </defs>
+</svg>
