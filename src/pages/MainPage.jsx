@@ -82,7 +82,7 @@ const MainPage = () => {
       </div>
       <MyFooter/>
       <button onClick={() => executeScroll('FAQ')}>
-        <img ref={arrowRef} className='arrowUp' src="/../public/arrowUp.svg" alt="Стрелка вверх"/>
+        <img ref={arrowRef} className='arrowUp' src="arrowUp.svg" alt="Стрелка вверх"/>
       </button>
     </>
   );

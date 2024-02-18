@@ -81,7 +81,7 @@ a:active {
 
 
 #picture {
-    background-image: url("/public/mainPicture.jpg");
+    background-image: url("/mainPicture.jpg");
     left: 50%;
     transform: translateX(-50%);
     min-width: 100%; /* Минимальная ширина изображения на всю ширину экрана */

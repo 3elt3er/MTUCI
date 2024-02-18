@@ -40,7 +40,7 @@ const AppRouter = () => {
     return null;
   }
   return (
-    <Router>
+    <Router basename='/MTUCI/'>
       <ScrollToTop/>
       <div className="App">
         <Routes>

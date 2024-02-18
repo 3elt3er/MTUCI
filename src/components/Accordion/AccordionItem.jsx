@@ -19,7 +19,7 @@ export default function AccordionItem({ question, answer, onClick, openIds, id, 
                 ? {transform: 'rotate(-180deg)'}
                 : {transform: 'rotate(0deg)'}
             }
-            src="public/arrow.svg" alt="Открыть ответ"/>
+            src="arrow.svg" alt="Открыть ответ"/>
           <p>{question}</p>
         </button>
       <div
