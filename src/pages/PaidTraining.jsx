@@ -1,17 +1,6 @@
-import InfoButtonList from "../components/InfoButtonList/InfoButtonList.jsx";
 import Header from "../components/UI/Header/Header.jsx";
 import AccordionSection from "../components/Accordion/AccordionSection.jsx";
-import {
-  activities,
-  averageQA,
-  budget,
-  deadlines, documentsPadiQA,
-  documentsQA, otherPaid,
-  otherSubmission, prices,
-  rules,
-  strategy, targetedTraining,
-  workPriem
-} from "../data.js";
+import {documentsPadiQA, otherPaid, prices, targetedTraining} from "../data.js";
 
 const PaidTraining = () => {
   const executeScroll = (sectionId) => {

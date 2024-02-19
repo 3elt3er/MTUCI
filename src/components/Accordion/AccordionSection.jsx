@@ -1,6 +1,7 @@
 import AccordionItem from "./AccordionItem.jsx";
-import { useState } from "react";
+import {useState} from "react";
 import classes from "./AccordionItem.module.css";
+import PropTypes from "prop-types";
 
 export default function AccordionSection({ infoBlock, header, isAreaTeaching}) {
   const [openIds, setOpenIds] = useState([]);
@@ -31,4 +32,10 @@ export default function AccordionSection({ infoBlock, header, isAreaTeaching}) {
       </ul>
     </div>
   );
+}
+
+AccordionSection.propTypes = {
+  header: PropTypes.string.isRequired,
+  isAreaTeaching: PropTypes.bool.isRequired,
+  infoBlock: PropTypes.object.isRequired,
 }

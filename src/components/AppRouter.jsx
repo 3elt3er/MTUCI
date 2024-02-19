@@ -1,6 +1,6 @@
 // Компонент маршрутизации
-import React, {useEffect} from 'react';
-import {BrowserRouter as Router, Routes, Route, useLocation} from 'react-router-dom';
+import {useEffect} from 'react';
+import {BrowserRouter as Router, Route, Routes, useLocation} from 'react-router-dom';
 import MainPage from "../pages/MainPage.jsx";
 import SubmissionPage from "../pages/SubmissionPage.jsx";
 import BudgetKvot from "../pages/BudgetKvot.jsx";
@@ -11,23 +11,22 @@ import Activities from "../pages/Activities.jsx";
 import Hostel from "../pages/Hostel.jsx";
 import Deferment from "../pages/Deferment.jsx";
 import Numbers from "../pages/Numbers.jsx";
-import FacultetIt from "../pages/FacultetIt.jsx";
-import FacultetKiib from "../pages/FacultetKiib.jsx";
-import FacultetRit from "../pages/FacultetRit.jsx";
-import FacultetSis from "../pages/FacultetSis.jsx";
-import FacultetCimk from "../pages/FacultetCimk.jsx";
-import FacultetZaoch from "../pages/FacultetZaoch.jsx";
-import FacultetFastZaoch from "../pages/FacultetFastZaoch.jsx";
-import FacultetOchZaoch from "../pages/FacultetOchZaoch.jsx";
-import MagaOch from "../pages/MagaOch.jsx";
-import MagaZaoch from "../pages/MagaZaoch.jsx";
-import MagaOchZaoch from "../pages/MagaOchZaoch.jsx";
+import FacultetIt from "../pages/facultets/FacultetIt.jsx";
+import FacultetKiib from "../pages/facultets/FacultetKiib.jsx";
+import FacultetRit from "../pages/facultets/FacultetRit.jsx";
+import FacultetSis from "../pages/facultets/FacultetSis.jsx";
+import FacultetCimk from "../pages/facultets/FacultetCimk.jsx";
+import FacultetZaoch from "../pages/facultets/FacultetZaoch.jsx";
+import FacultetFastZaoch from "../pages/facultets/FacultetFastZaoch.jsx";
+import FacultetOchZaoch from "../pages/facultets/FacultetOchZaoch.jsx";
+import MagaOch from "../pages/facultets/MagaOch.jsx";
+import MagaZaoch from "../pages/facultets/MagaZaoch.jsx";
+import MagaOchZaoch from "../pages/facultets/MagaOchZaoch.jsx";
 import Scripts from "../pages/Scripts.jsx";
 import Verification from "../pages/Verification.jsx";
-import DovuzEge from "../pages/DovuzEge.jsx";
-import DovuzOge from "../pages/DovuzOge.jsx";
-import DovuzVi from "../pages/DovuzVi.jsx";
-import Error from "../pages/Error.jsx";
+import DovuzEge from "../pages/dovuz/DovuzEge.jsx";
+import DovuzOge from "../pages/dovuz/DovuzOge.jsx";
+import DovuzVi from "../pages/dovuz/DovuzVi.jsx";
 
 const AppRouter = () => {
   function ScrollToTop() {

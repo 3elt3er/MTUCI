@@ -1,11 +1,8 @@
-import InfoButtonList from "../components/InfoButtonList/InfoButtonList.jsx";
-import Header from "../components/UI/Header/Header.jsx";
-import AccordionSection from "../components/Accordion/AccordionSection.jsx";
-import {activities, facultetCimk, facultetIT} from "../data.js";
-import AreasOfTeaching from "../components/AreasOfTeaching/AreasOfTeaching.jsx";
-import FacultetPic from "../components/FacultetPic/FacultetPic.jsx";
+import Header from "../../components/UI/Header/Header.jsx";
+import AccordionSection from "../../components/Accordion/AccordionSection.jsx";
+import {facultetCimk} from "../../data.js";
+import FacultetPic from "../../components/FacultetPic/FacultetPic.jsx";
 import classes from "./Facultet.module.css";
-import React from "react";
 
 
 const FacultetIt = () => {

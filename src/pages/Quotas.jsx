@@ -1,17 +1,6 @@
-import InfoButtonList from "../components/InfoButtonList/InfoButtonList.jsx";
 import Header from "../components/UI/Header/Header.jsx";
 import AccordionSection from "../components/Accordion/AccordionSection.jsx";
-import {
-  activities, armyVolonID, averageID,
-  averageQA, averageQuotas,
-  budget,
-  deadlines,
-  documentsQA, invalid, olympID,
-  otherSubmission, quotasLnrDnr,
-  rules, sportID,
-  strategy, svo,
-  workPriem
-} from "../data.js";
+import {averageQuotas, invalid, quotasLnrDnr, svo} from "../data.js";
 
 const IndividualAchievements = () => {
   const executeScroll = (sectionId) => {

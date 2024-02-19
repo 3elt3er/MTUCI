@@ -1,17 +1,6 @@
-import InfoButtonList from "../components/InfoButtonList/InfoButtonList.jsx";
 import Header from "../components/UI/Header/Header.jsx";
 import AccordionSection from "../components/Accordion/AccordionSection.jsx";
-import {
-  activities,
-  averageQA,
-  budget,
-  deadlines,
-  documentsQA,
-  otherSubmission,
-  rules,
-  strategy,
-  workPriem
-} from "../data.js";
+import {averageQA, budget, deadlines, strategy} from "../data.js";
 
 const BudgetKvot = () => {
   const executeScroll = (sectionId) => {

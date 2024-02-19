@@ -1,6 +1,6 @@
-import React from 'react';
 import classes from './InfoButtonList.module.css'
 import ButtonList from "../ButtonList/ButtonList.jsx";
+import PropTypes from "prop-types";
 
 const InfoButtonList = ({infoHeader, infoText, children}) => {
   return (
@@ -13,9 +13,17 @@ const InfoButtonList = ({infoHeader, infoText, children}) => {
           {infoText}
         </div>
       </div>
-      <ButtonList children={children}/>
+      <ButtonList>
+        {children}
+      </ButtonList>
     </section>
   );
+};
+
+InfoButtonList.propTypes = {
+  infoHeader: PropTypes.string.isRequired,
+  infoText: PropTypes.string.isRequired,
+  children: PropTypes.node.isRequired
 };
 
 export default InfoButtonList;

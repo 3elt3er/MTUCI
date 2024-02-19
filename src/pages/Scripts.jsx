@@ -1,7 +1,6 @@
-import React from 'react';
 import Header from "../components/UI/Header/Header.jsx";
 import AccordionSection from "../components/Accordion/AccordionSection.jsx";
-import {activities, scripts} from "../data.js";
+import {scripts} from "../data.js";
 
 const Scripts = () => {
   const executeScroll = (sectionId) => {

@@ -1,6 +1,6 @@
-import React from 'react';
 import classes from "./MyButton.module.css";
-import { Link } from 'react-router-dom';
+import {Link} from 'react-router-dom';
+import PropTypes from "prop-types";
 
 const MyButton = ({to, children, style}) => {
     return (
@@ -8,6 +8,12 @@ const MyButton = ({to, children, style}) => {
             {children}
         </Link>
     );
+};
+
+MyButton.propTypes = {
+    children: PropTypes.string.isRequired,
+    to: PropTypes.string.isRequired,
+    style: PropTypes.object, // Необязательное свойство стиля
 };
 
 export default MyButton;

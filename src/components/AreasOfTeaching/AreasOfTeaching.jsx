@@ -1,28 +1,9 @@
 // AreasOfTeaching.jsx
-import React from 'react';
 import ButtonList from "../ButtonList/ButtonList.jsx";
 import classes from "./AreasOfTeaching.module.css";
+import PropTypes from 'prop-types';
 
-const AreasOfTeaching = () => {
-  const buttonsData = [
-    { text: 'ИТ', to: '/facultet-it' },
-    { text: 'КиИБ', to: '/facultet-kiib' },
-    { text: 'Рит', to: '/facultet-rit' },
-    { text: 'СиСС', to: '/facultet-sis' },
-    { text: 'ЦЭиМК', to: '/facultet-cimk' },
-  ];
-  const secondButtonsData = [
-    { text: 'Заочное', to: '/facultet-zaochniy' },
-    { text: 'Ускоренное', to: '/facultet-fast-zaochniy' },
-    { text: 'Очно-заочное', to: '/facultet-ochno-zaochniy' },
-  ];
-  const thirdButtonsData = [
-    { text: 'Заочное', to: '/facultet-magistratura-ochno' },
-    { text: 'Ускоренное', to: '/facultet-magistratura-zaochno' },
-    { text: 'Очно-заочное', to: '/facultet-magistratura-ochno-zaochno' },
-  ];
-
-
+const AreasOfTeaching = ({ firstRow, secondRow, thirdRow }) => {
   const whiteButtonStyles = {
     color: 'white',
     border: '1px solid white'
@@ -32,18 +13,45 @@ const AreasOfTeaching = () => {
     <div className={classes.flexBox}>
       <div className={classes.areasOfTeaching}>
         <h2>Очный бакалавриат</h2>
-        <ButtonList style={whiteButtonStyles} children={buttonsData}/>
+        <ButtonList style={whiteButtonStyles}>
+          {firstRow}
+        </ButtonList>
       </div>
       <div className={classes.areasOfTeaching}>
         <h2>Заочный бакалавриат</h2>
-        <ButtonList style={whiteButtonStyles} children={secondButtonsData}/>
+        <ButtonList style={whiteButtonStyles}>
+          {secondRow}
+        </ButtonList>
       </div>
       <div className={classes.areasOfTeaching}>
         <h2>Магистратура</h2>
-        <ButtonList style={whiteButtonStyles} children={thirdButtonsData}/>
+        <ButtonList style={whiteButtonStyles}>
+          {thirdRow}
+        </ButtonList>
       </div>
     </div>
   );
+};
+
+AreasOfTeaching.propTypes = {
+  firstRow: PropTypes.arrayOf(
+    PropTypes.shape({
+      text: PropTypes.string.isRequired,
+      to: PropTypes.string.isRequired,
+    })
+  ),
+  secondRow: PropTypes.arrayOf(
+    PropTypes.shape({
+      text: PropTypes.string.isRequired,
+      to: PropTypes.string.isRequired,
+    })
+  ),
+  thirdRow: PropTypes.arrayOf(
+    PropTypes.shape({
+      text: PropTypes.string.isRequired,
+      to: PropTypes.string.isRequired,
+    })
+  )
 };
 
 export default AreasOfTeaching;

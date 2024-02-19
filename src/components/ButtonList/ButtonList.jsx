@@ -1,6 +1,6 @@
-import React from 'react';
 import classes from './ButtonList.module.css'
 import MyButton from "../UI/Button/MyButton.jsx";
+import PropTypes from "prop-types";
 
 const ButtonList = (props) => {
   return (
@@ -10,6 +10,14 @@ const ButtonList = (props) => {
       )}
     </section>
   );
+};
+
+ButtonList.propTypes = {
+  children: PropTypes.arrayOf(PropTypes.shape({
+    text: PropTypes.string.isRequired,
+    to: PropTypes.string.isRequired,
+  })).isRequired,
+  style: PropTypes.object,
 };
 
 export default ButtonList;

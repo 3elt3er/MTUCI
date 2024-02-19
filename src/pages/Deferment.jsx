@@ -1,17 +1,6 @@
-import InfoButtonList from "../components/InfoButtonList/InfoButtonList.jsx";
 import Header from "../components/UI/Header/Header.jsx";
 import AccordionSection from "../components/Accordion/AccordionSection.jsx";
-import {
-  activities,
-  averageQA,
-  budget,
-  deadlines, deferment,
-  documentsQA, formats, hostel,
-  otherSubmission, professionalEducation,
-  rules,
-  strategy, supplyUniversity,
-  workPriem
-} from "../data.js";
+import {deferment} from "../data.js";
 
 const Deferment = () => {
   const executeScroll = (sectionId) => {

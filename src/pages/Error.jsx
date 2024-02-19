@@ -1,4 +1,3 @@
-import React from 'react';
 import Header from "../components/UI/Header/Header.jsx";
 
 const Error = () => {
@@ -11,7 +10,8 @@ const Error = () => {
         onClick={null}
       />
       <div className="window">
-        <h1>Такой страницы нет. Как ты вообще на неё попал?</h1>
+        <h1>Такой страницы нет.</h1>
+        <h1>Нажмите на стрелочку Назад</h1>
       </div>
     </div>
   );

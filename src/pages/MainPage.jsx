@@ -57,7 +57,31 @@ const MainPage = () => {
           </InfoButtonList>
         </div>
         <div className="window" id='picture'>
-          <AreasOfTeaching/>
+          <AreasOfTeaching
+            firstRow={
+              [
+                { text: 'ИТ', to: '/facultet-it' },
+                { text: 'КиИБ', to: '/facultet-kiib' },
+                { text: 'Рит', to: '/facultet-rit' },
+                { text: 'СиСС', to: '/facultet-sis' },
+                { text: 'ЦЭиМК', to: '/facultet-cimk' },
+              ]
+            }
+            secondRow={
+              [
+                { text: 'Заочное', to: '/facultet-zaochniy' },
+                { text: 'Ускоренное', to: '/facultet-fast-zaochniy' },
+                { text: 'Очно-заочное', to: '/facultet-ochno-zaochniy' },
+              ]
+            }
+            thirdRow={
+              [
+                { text: 'Очное', to: '/facultet-magistratura-ochno' },
+                { text: 'Заочное', to: '/facultet-magistratura-zaochno' },
+                { text: 'Очно-заочное', to: '/facultet-magistratura-ochno-zaochno' },
+              ]
+            }
+          />
         </div>
         <div className="window" id='scripts'>
           <InfoButtonList
@@ -76,7 +100,13 @@ const MainPage = () => {
           <CardSection
             infoHeader={'Довузовская подготовка'}
           >
-            {['Подготовка к ЕГЭ', 'Подготовка к ОГЭ', 'Подготовка к ВИ']}
+            {
+              [
+                { text: 'Подготовка к ЕГЭ', to: '/dovuz-ege' },
+                { text: 'Подготовка к ОГЭ', to: '/dovuz-oge' },
+                { text: 'Подготовка к ВИ', to: '/dovuz-vi' },
+              ]
+            }
           </CardSection>
         </div>
       </div>

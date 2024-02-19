@@ -1,6 +1,8 @@
 import classes from "./AccordionItem.module.css";
-import { useRef } from "react";
+import {useRef} from "react";
 import AreasTeaching from "./AreasTeaching/AreasTeaching.jsx";
+import PropTypes from "prop-types";
+
 export default function AccordionItem({ question, answer, onClick, openIds, id, isAreaTeaching, ...props}) {
   const itemRef = useRef(null)
 
@@ -50,3 +52,19 @@ export default function AccordionItem({ question, answer, onClick, openIds, id, 
     </li>
   )
 }
+
+AccordionItem.propTypes = {
+  question: PropTypes.string.isRequired,
+  answer: PropTypes.string.isRequired,
+  onClick: PropTypes.func,
+  openIds: PropTypes.object.isRequired,
+  id: PropTypes.number.isRequired,
+  isAreaTeaching: PropTypes.bool.isRequired,
+  points: PropTypes.number.isRequired,
+  number: PropTypes.string.isRequired,
+  price: PropTypes.string.isRequired,
+  profile: PropTypes.string.isRequired,
+  about: PropTypes.string.isRequired,
+  proffessions: PropTypes.string.isRequired,
+  companies: PropTypes.string.isRequired,
+};

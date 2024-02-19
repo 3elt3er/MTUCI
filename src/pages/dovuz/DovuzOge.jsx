@@ -1,7 +1,6 @@
-import React from 'react';
 import classes from "./Dovuz.module.css";
-import Header from "../components/UI/Header/Header.jsx";
-import DovuzAdvantages from "../components/DovuzAdvantages/DovuzAdvantages.jsx";
+import Header from "../../components/UI/Header/Header.jsx";
+import DovuzAdvantages from "../../components/DovuzAdvantages/DovuzAdvantages.jsx";
 
 const DovuzOge = () => {
   const executeScroll = (sectionId) => {

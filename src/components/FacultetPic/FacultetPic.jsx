@@ -1,9 +1,5 @@
-import React from 'react';
 import classes from "./FacultetPic.module.css";
-import AreasOfTeaching from "../AreasOfTeaching/AreasOfTeaching.jsx";
-import AreasTeaching from "../Accordion/AreasTeaching/AreasTeaching.jsx";
-import AccordionSection from "../Accordion/AccordionSection.jsx";
-import {facultetIT} from "../../data.js";
+import PropTypes from "prop-types";
 
 const FacultetPic = ({ header, description }) => {
 	return (
@@ -15,6 +11,11 @@ const FacultetPic = ({ header, description }) => {
 		</>
 
 	);
+};
+
+FacultetPic.propTypes = {
+	header: PropTypes.string.isRequired,
+	description: PropTypes.string.isRequired,
 };
 
 export default FacultetPic;

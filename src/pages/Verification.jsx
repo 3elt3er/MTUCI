@@ -1,7 +1,6 @@
-import React from 'react';
 import Header from "../components/UI/Header/Header.jsx";
 import AccordionSection from "../components/Accordion/AccordionSection.jsx";
-import { questionVerification } from "../data.js";
+import {questionVerification} from "../data.js";
 
 const Verification = () => {
   const executeScroll = (sectionId) => {

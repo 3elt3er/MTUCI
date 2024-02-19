@@ -1,5 +1,4 @@
-import React from 'react';
-import classes from "../../pages/Dovuz.module.css";
+import classes from "../../pages/dovuz/Dovuz.module.css";
 
 const DovuzAdvantages = () => {
   return (
