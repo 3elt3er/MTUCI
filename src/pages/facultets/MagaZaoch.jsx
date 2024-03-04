@@ -20,7 +20,7 @@ const MagaZaoch = () => {
 					description={'Заочная магистратура базируется на обучении студентов по 3 направлениям.'}/>
 			</div>
 			<div className="window noHeightLimit">
-				<AccordionSection header='Направления подготовки' infoBlock={facultetMagZaoch} isAreaTeaching={true}/>
+				<AccordionSection header='Направления подготовки' infoBlock={facultetMagZaoch} isAreaTeaching={true} isMagistratura={true}/>
 			</div>
 
 		</>

@@ -41,12 +41,13 @@ export default function AccordionItem({ question, answer, onClick, openIds, id, 
                   number={props.number}
                   price={props.price}
                   profile={props.profile}
-                  about={props.about}
+                  about={<span dangerouslySetInnerHTML={{__html: props.about}}></span>}
                   proffessions={props.proffessions}
                   companies={props.companies}
+                  isMagistratura={props.isMagistratura}
                 />
               </span>
-              : <span>{answer}</span>}
+              : <span dangerouslySetInnerHTML={{__html: answer}}></span>}
         </div>
       </div>
     </li>
