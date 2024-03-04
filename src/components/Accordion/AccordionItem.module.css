@@ -34,7 +34,7 @@
 }
 
 .accordionBody {
-    padding: 0 4em 1.2em 3.4em;
+    padding: 0 4em 1.2em 4.6em;
     font-weight: 400;
     @media screen and (max-width: 500px) {
         padding: 0 1em 1em;
