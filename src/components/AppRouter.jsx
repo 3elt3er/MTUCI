@@ -1,6 +1,5 @@
-// Компонент маршрутизации
-import {useEffect} from 'react';
-import {BrowserRouter as Router, Route, Routes, useLocation} from 'react-router-dom';
+import { useEffect } from 'react';
+import { HashRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
 import MainPage from "../pages/MainPage.jsx";
 import SubmissionPage from "../pages/SubmissionPage.jsx";
 import BudgetKvot from "../pages/BudgetKvot.jsx";
@@ -38,43 +37,43 @@ const AppRouter = () => {
 
     return null;
   }
+
   return (
-    <Router basename='/MTUCI/'>
-      <ScrollToTop/>
-      <div className="App">
-        <Routes>
-          <Route path="/*" element={<MainPage/>}/>
-          <Route path="/submission" element={<SubmissionPage/>}/>
-          <Route path="/budget-bvi" element={<BudgetKvot/>}/>
-          <Route path="/paid-training" element={<PaidTraining/>}/>
-          <Route path="/individual-achievements" element={<IndividualAchievements/>}/>
-          <Route path="/quotas" element={<Quotas/>}/>
-          <Route path="/activities" element={<Activities/>}/>
-          <Route path="/hostel" element={<Hostel/>}/>
-          <Route path="/deferment" element={<Deferment/>}/>
-          <Route path="/numbers" element={<Numbers/>}/>
-          <Route path="/facultet-it" element={<FacultetIt/>}/>
-          <Route path="/facultet-kiib" element={<FacultetKiib/>}/>
-          <Route path="/facultet-rit" element={<FacultetRit/>}/>
-          <Route path="/facultet-sis" element={<FacultetSis/>}/>
-          <Route path="/facultet-cimk" element={<FacultetCimk/>}/>
-          <Route path="/facultet-zaochniy" element={<FacultetZaoch/>}/>
-          <Route path="/facultet-fast-zaochniy" element={<FacultetFastZaoch/>}/>
-          <Route path="/facultet-ochno-zaochniy" element={<FacultetOchZaoch/>}/>
-          <Route path="/facultet-magistratura-ochno" element={<MagaOch/>}/>
-          <Route path="/facultet-magistratura-zaochno" element={<MagaZaoch/>}/>
-          <Route path="/facultet-magistratura-ochno-zaochno" element={<MagaOchZaoch/>}/>
-          <Route path="/scripts" element={<Scripts/>}/>
-          <Route path="/verification" element={<Verification/>}/>
-          <Route path="/dovuz-ege" element={<DovuzEge/>}/>
-          <Route path="/dovuz-oge" element={<DovuzOge/>}/>
-          <Route path="/dovuz-vi" element={<DovuzVi/>}/>
-          {/*<Route path="/*" element={<Error/>}/>*/}
-    </Routes>
-      </div>
-</Router>
-)
-  ;
+      <Router>
+        <ScrollToTop/>
+        <div className="App">
+          <Routes>
+            <Route path="/*" element={<MainPage/>}/>
+            <Route path="/submission" element={<SubmissionPage/>}/>
+            <Route path="/budget-bvi" element={<BudgetKvot/>}/>
+            <Route path="/paid-training" element={<PaidTraining/>}/>
+            <Route path="/individual-achievements" element={<IndividualAchievements/>}/>
+            <Route path="/quotas" element={<Quotas/>}/>
+            <Route path="/activities" element={<Activities/>}/>
+            <Route path="/hostel" element={<Hostel/>}/>
+            <Route path="/deferment" element={<Deferment/>}/>
+            <Route path="/numbers" element={<Numbers/>}/>
+            <Route path="/facultet-it" element={<FacultetIt/>}/>
+            <Route path="/facultet-kiib" element={<FacultetKiib/>}/>
+            <Route path="/facultet-rit" element={<FacultetRit/>}/>
+            <Route path="/facultet-sis" element={<FacultetSis/>}/>
+            <Route path="/facultet-cimk" element={<FacultetCimk/>}/>
+            <Route path="/facultet-zaochniy" element={<FacultetZaoch/>}/>
+            <Route path="/facultet-fast-zaochniy" element={<FacultetFastZaoch/>}/>
+            <Route path="/facultet-ochno-zaochniy" element={<FacultetOchZaoch/>}/>
+            <Route path="/facultet-magistratura-ochno" element={<MagaOch/>}/>
+            <Route path="/facultet-magistratura-zaochno" element={<MagaZaoch/>}/>
+            <Route path="/facultet-magistratura-ochno-zaochno" element={<MagaOchZaoch/>}/>
+            <Route path="/scripts" element={<Scripts/>}/>
+            <Route path="/verification" element={<Verification/>}/>
+            <Route path="/dovuz-ege" element={<DovuzEge/>}/>
+            <Route path="/dovuz-oge" element={<DovuzOge/>}/>
+            <Route path="/dovuz-vi" element={<DovuzVi/>}/>
+            {/*<Route path="/*" element={<Error/>}/>*/}
+          </Routes>
+        </div>
+      </Router>
+  );
 };
 
 export default AppRouter;

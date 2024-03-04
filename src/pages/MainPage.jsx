@@ -39,7 +39,7 @@ const MainPage = () => {
         <div className="window" id='FAQ'>
           <InfoButtonList
             infoHeader='Блок “FAQ”'
-            infoText='Общие вопросы по поступлению в 2023 году'
+            infoText='Общие вопросы по поступлению в 2024 году'
           >
             {
               [
