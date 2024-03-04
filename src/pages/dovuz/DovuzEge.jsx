@@ -17,7 +17,7 @@ const DovuzEge = () => {
         id={['dovuz', 'advantages']}
         onClick={executeScroll}
       />
-      <div className='window' id='dovuz'>
+      <div className='window noHeightLimitMobile' id='dovuz'>
         <div className={classes.headerOfPage}>Довузовская подготовка к ЕГЭ</div>
         <div className={classes.flexBlock}>
           <div className={classes.columns}>
@@ -71,7 +71,7 @@ const DovuzEge = () => {
           </div>
         </div>
       </div>
-      <div className='window' id='advantages'>
+      <div className='window noHeightLimitMobile' id='advantages'>
         <DovuzAdvantages/>
       </div>
     </>

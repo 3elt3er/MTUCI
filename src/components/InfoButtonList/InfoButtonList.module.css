@@ -2,6 +2,10 @@
     display: flex;
     justify-content: space-between;
     gap: 16%;
+    @media screen and (max-width: 500px) {
+        flex-direction: column;
+        gap: 2vh;
+    }
 }
 
 .infoBlock {
@@ -15,9 +19,15 @@
 .infoHeader{
     font-size: 44px;
     font-weight: 500;
+    @media screen and (max-width: 500px) {
+        font-size: 22px;
+    }
 }
 
 .infoText {
     font-size: 22px;
     font-weight: 400;
+    @media screen and (max-width: 500px) {
+        font-size: 12px;
+    }
 }

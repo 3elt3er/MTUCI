@@ -12,6 +12,11 @@
     font-size: 22px;
     font-weight: 400;
     transition: 0.2s ease;
+    @media screen and (max-width: 500px) {
+        height: 10vh;
+        padding: 0.1em 0.3em;
+        font-size: 12px;
+    }
 }
 
 /*.button {*/

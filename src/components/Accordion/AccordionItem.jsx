@@ -35,7 +35,7 @@ export default function AccordionItem({ question, answer, onClick, openIds, id, 
         <div className={classes.accordionBody} ref={itemRef}>
           {
             isAreaTeaching ?
-              <span>
+              <span className={classes.spanBlockInside}>
                 <AreasTeaching
                   points={props.points}
                   number={props.number}

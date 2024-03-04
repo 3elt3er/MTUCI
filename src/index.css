@@ -49,8 +49,6 @@ a:active {
 }
 
 .App {
-
-
 }
 
 .window {
@@ -64,10 +62,20 @@ a:active {
     justify-content: center;
     background-size: cover;
     background-position: center;
+    @media screen and (max-width: 500px) {
+        max-width: 90vw;
+    }
 }
 
 .noHeightLimit {
     height: auto;
+}
+
+.noHeightLimitMobile {
+    @media screen and (max-width: 500px) {
+        height: auto;
+        margin-top: 4vh;
+    }
 }
 
 .arrowUp {
@@ -76,6 +84,9 @@ a:active {
     bottom: 5%;
     right: 5%;
     transition: opacity 0.3s ease;
+    @media screen and (max-width: 500px) {
+        height: 40px;
+    }
 }
 
 

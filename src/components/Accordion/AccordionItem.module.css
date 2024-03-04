@@ -2,12 +2,14 @@
     border-radius: 14px;
     box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.4);
     font-family: 'Montserrat', sans-serif;
-    font-size: 22px;
     word-break: break-word;
 }
 .accordionItem:hover {
     cursor: pointer;
     scale: 1.008;
+    @media screen and (max-width: 500px) {
+        scale: 1.001;
+    }
 }
 
 .accordionHeader:focus-visible {
@@ -26,12 +28,27 @@
     font-weight: 500;
     cursor: pointer;
     gap: 1em;
+    @media screen and (max-width: 500px) {
+        font-size: 12px;
+    }
 }
 
 .accordionBody {
     padding: 0 4em 1.2em 3.4em;
     font-weight: 400;
+    @media screen and (max-width: 500px) {
+        padding: 0 1em 1em;
+    }
 }
+
+.accordionBody span {
+    @media screen and (max-width: 500px) {
+        font-size: 12px;
+    }
+}
+
+
+
 .accordionCollapse {
     height: 0;
     overflow: hidden;
@@ -41,12 +58,18 @@
 .collapsibleArrow {
     margin-top: 5px;
     transition: transform 0.2s linear;
+    @media screen and (max-width: 1100px) {
+        height: 10px;
+    }
 }
 
 .header {
     font-size: 36px;
     font-weight: 500;
     text-align: center;
+    @media screen and (max-width: 1100px) {
+        font-size: 20px;
+    }
 }
 
 .accordion {
@@ -61,4 +84,10 @@
     display: flex;
     flex-direction: column;
     gap: 0.7em;
+}
+
+.spanBlockInside {
+    @media screen and (max-width: 500px) {
+        font-size: 12px;
+    }
 }
