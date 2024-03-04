@@ -33,6 +33,7 @@ button {
     font-size: inherit;
     background: inherit;
     cursor: pointer;
+    color: #000000;
 }
 
 a {
