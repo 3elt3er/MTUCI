@@ -45,7 +45,7 @@
 }
 
 .bottomSection {
-    margin: 0 2em;
+    gap: 20px;
     display: flex;
     justify-content: space-between;
     @media screen and (max-width: 500px) {
