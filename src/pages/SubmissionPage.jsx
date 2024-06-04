@@ -32,7 +32,7 @@ const SubmissionPage = () => {
         <AccordionSection infoBlock={documentsQA} header='Вопросы по документам' isAreaTeaching={false}/>
       </div>
       <div className="window noHeightLimit" id='rules'>
-        <AccordionSection infoBlock={rules} header='Правила приема 2004' isAreaTeaching={false}/>
+        <AccordionSection infoBlock={rules} header='Правила приема 2024' isAreaTeaching={false}/>
       </div>
       <div className="window noHeightLimit" id='process'>
         <AccordionSection infoBlock={otherSubmission} header='Процесс поступления и другое' isAreaTeaching={false}/>
