@@ -13,7 +13,7 @@ const SubmissionPage = () => {
     <>
       <Header
         arrowBack={true}
-        contains={['Работа ПК', 'Документы', 'Прием 2023', 'Подача']}
+        contains={['Работа ПК', 'Документы', 'Прием 2024', 'Подача']}
         id={['workPK', 'documents', 'rules', 'process']}
         onClick={executeScroll}
       />
@@ -32,7 +32,7 @@ const SubmissionPage = () => {
         <AccordionSection infoBlock={documentsQA} header='Вопросы по документам' isAreaTeaching={false}/>
       </div>
       <div className="window noHeightLimit" id='rules'>
-        <AccordionSection infoBlock={rules} header='Правила приема 2023' isAreaTeaching={false}/>
+        <AccordionSection infoBlock={rules} header='Правила приема 2024' isAreaTeaching={false}/>
       </div>
       <div className="window noHeightLimit" id='process'>
         <AccordionSection infoBlock={otherSubmission} header='Процесс поступления и другое' isAreaTeaching={false}/>
