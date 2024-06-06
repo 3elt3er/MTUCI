@@ -1,5 +1,4 @@
 import '../../../data.js'
-import {facultetIT} from "../../../data.js";
 import classes from "./AreasTeaching.module.css";
 import PropTypes from "prop-types";
 
@@ -25,7 +24,8 @@ const AreasTeaching = ({points, number, price, profile, about, proffessions, com
       <p><b>Профессии:</b> {proffessions}</p>
       <p><b>Компании:</b> {companies}</p>
       <p><b>Минимальные проходные (Бюджет/Коммерция):</b></p>
-      {isMagistratura ?
+      
+      {isMagistratura ? // Расклад минималок по всему маге по блокам
         <div className={classes.bottomSection}>
           <div className={classes.bottomBlock}>
             <h4>Бюджет:</h4>
@@ -38,7 +38,8 @@ const AreasTeaching = ({points, number, price, profile, about, proffessions, com
         </div>
         : null
       }
-      {isCimk ?
+
+      {isCimk ? // Расклад минималок по всему ЦЭиМКу по блокам
         <div className={classes.bottomSection}>
           <div className={classes.bottomBlock}>
             <h4>ЕГЭ (38.00.00):</h4>
@@ -72,7 +73,8 @@ const AreasTeaching = ({points, number, price, profile, about, proffessions, com
         </div>
         : null
       }
-      {!isCimk && !isMagistratura ?
+
+      {!isCimk && !isMagistratura ? // Расклад минималок по всем остальным направлениям по блокам
         <div className={classes.bottomSection}>
           <div className={classes.bottomBlock}>
             <h4>ЕГЭ:</h4>
