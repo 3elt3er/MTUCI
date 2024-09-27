@@ -35,12 +35,13 @@ const DovuzVi = () => {
           <div className={classes.columns}>
             <div className={`${classes.item} ${classes.secondItem}`}>
               <div className={classes.header}>Сроки</div>
-              <span>1 поток: Ноябрь 2023 – Март 2024</span>
-              <span>2 поток: Март 2024 – Июнь 2024</span>
+              <span>1 поток: 2 Ноябрь 2024 – 21 Июня 2025</span>
+              <span>Продолжительность: 32 занятий по 2 ак.часа (всего 64 к.часов)</span>
+              <span>2 поток: 1 Март 2024 – 21 Июня 2025</span>
+              <span>Продолжительность: 16 занятий по 2 ак.часа (всего 32 к.часов)</span>
             </div>
             <div className={classes.item}>
               <div className={classes.header}>Расписание</div>
-              <span>Продолжительность: 16 занятий по 2 ак.часа (всего 32 к.часов)</span>
               <span>Расписание:</span>
               <span>1 занятие: с 11:00 до 12:30</span>
               <span>2 занятие: с 12:45 до 14:15 </span>
