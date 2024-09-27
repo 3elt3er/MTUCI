@@ -35,9 +35,9 @@ const DovuzVi = () => {
           <div className={classes.columns}>
             <div className={`${classes.item} ${classes.secondItem}`}>
               <div className={classes.header}>Сроки</div>
-              <span>1 поток: 2 Ноябрь 2024 – 21 Июня 2025</span>
+              <span>1 поток: 2 Ноября 2024 – 21 Июня 2025</span>
               <span>Продолжительность: 32 занятий по 2 ак.часа (всего 64 к.часов)</span>
-              <span>2 поток: 1 Март 2024 – 21 Июня 2025</span>
+              <span>2 поток: 1 Марта 2024 – 21 Июня 2025</span>
               <span>Продолжительность: 16 занятий по 2 ак.часа (всего 32 к.часов)</span>
             </div>
             <div className={classes.item}>
@@ -52,8 +52,8 @@ const DovuzVi = () => {
           <div className={classes.columns}>
             <div className={`${classes.item} ${classes.thirdItem}`}>
               <div className={classes.header}>Стоимость</div>
-              <span>Полный курс по одному предмету стоит 16 000 руб.</span>
-              <span>Оплата ежемесячно по 4000 руб. за предмет.</span>
+              <span>Полный курс по одному предмету стоит 38 400 руб.</span>
+              <span>Оплата ежемесячно по 4800 руб. за предмет.</span>
             </div>
             <div className={classes.item}>
               <div className={classes.header}>Формат</div>
