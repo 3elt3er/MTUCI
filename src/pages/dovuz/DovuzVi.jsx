@@ -46,7 +46,7 @@ const DovuzVi = () => {
               <span>1 занятие: с 11:00 до 12:30</span>
               <span>2 занятие: с 12:45 до 14:15 </span>
               <span>3 занятие: с 14:30 до 16:00</span>
-              <span>3 занятие: с 16:15 до 17:45</span>
+              <span>4 занятие: с 16:15 до 17:45</span>
             </div>
           </div>
           <div className={classes.columns}>
