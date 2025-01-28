@@ -92,25 +92,6 @@ const AreasTeaching = ({points, number, price, profile, about, proffessions, com
         </div>
         : null
       }
-
-      {!isCimk && !isMagistratura ? // Расклад минималок по всем остальным направлениям по блокам
-        <div className={classes.bottomSection}>
-          <div className={classes.bottomBlock}>
-            <h4>ЕГЭ:</h4>
-            <span>Информатика 40/40</span>
-            <span>Физика 40/36</span>
-            <span>Математика 40/27</span>
-            <span>Русский язык 40/36</span>
-          </div>
-          <div className={classes.bottomBlock}>
-            <h4>ВИ:</h4>
-            <span>Инф. тех. и программир. 40/10</span>
-            <span>Матем. и эл. теор. вер. 40/10</span>
-            <span>Русский язык 40/36</span>
-          </div>
-        </div>
-        : null
-      }
     </section>
   )
 }
