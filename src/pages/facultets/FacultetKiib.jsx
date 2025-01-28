@@ -1,6 +1,6 @@
 import Header from "../../components/UI/Header/Header.jsx";
 import AccordionSection from "../../components/Accordion/AccordionSection.jsx";
-import {facultetKiib} from "../../data.js";
+import {facultetKiib, MathandInf} from "../../data.js";
 import FacultetPic from "../../components/FacultetPic/FacultetPic.jsx";
 import classes from "./Facultet.module.css";
 
@@ -20,7 +20,8 @@ const FacultetKiib = () => {
           description={'Кибернетика и Информационная безопасность (КиИБ) - На этом факультете осуществляется подготовка профессионалов по направлениям в сфере интеллектуальных киберсистем и информационной безопасности. В составе факультета : киберполигон МТУСИ ( первый в России киберполигон с возможностью анализа атак на системах квантового распределения ключей на базе решений ГК «ИнфоТеКС», обновляющийся в режиме реального времени, центр Лаборатории Касперского, лаборатория «Код безопасности», центр "Робототехники KUKA". Студент получает прикладные знания в области информационной безопасности, т.к. обучение включает практику в лабораториях главных компаний в сфере инф.без.'}/>
       </div>
       <div className="window noHeightLimit">
-        <AccordionSection header='Направления подготовки' infoBlock={facultetKiib} isAreaTeaching={true}/>
+      <AccordionSection header='Направления подготовки' infoBlock={facultetKiib} isAreaTeaching={true}/>
+        <AccordionSection infoBlock={MathandInf} isAreaTeaching={true}/>
       </div>
 
     </>
