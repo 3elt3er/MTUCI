@@ -1469,6 +1469,7 @@ export const facultetCimk = [
   },
 ]
 
+
 export const facultetKiib = [
   {
     question: '01.03.02 Прикладная математика и информатика',
