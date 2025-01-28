@@ -1385,7 +1385,7 @@ export const clue = [
 
 export const facultetIT = [
   {
-    question: '02.03.01 Математика и компьбтерные науки',
+    question: '02.03.01 Математика и компьютерные науки',
     points: 0,
     number: 'Б 0 / П ?',
     price: '145 700',
