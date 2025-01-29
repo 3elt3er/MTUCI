@@ -72,4 +72,5 @@ AccordionItem.propTypes = {
   companies: PropTypes.string.isRequired,
   isMagistratura: PropTypes.bool,
   isCimk: PropTypes.bool,
+  isMathandInf: PropTypes.bool,
 };
