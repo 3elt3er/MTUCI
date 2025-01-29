@@ -3,7 +3,7 @@ import {useState} from "react";
 import classes from "./AccordionItem.module.css";
 import PropTypes from "prop-types";
 
-export default function AccordionSection({ infoBlock, header, isAreaTeaching, isMagistratura, isCimk}) {
+export default function AccordionSection({ infoBlock, header, isAreaTeaching, isMagistratura, isCimk, isMathandInf}) {
   const [openIds, setOpenIds] = useState([]);
 
   const toggleAccordion = (id) => {
@@ -28,6 +28,7 @@ export default function AccordionSection({ infoBlock, header, isAreaTeaching, is
             isAreaTeaching={isAreaTeaching}
             isMagistratura={isMagistratura}
             isCimk={isCimk}
+            isMathandInf={isMathandInf}
             {...item}
           />
         ))}
@@ -42,4 +43,5 @@ AccordionSection.propTypes = {
   infoBlock: PropTypes.object.isRequired,
   isMagistratura: PropTypes.bool,
   isCimk: PropTypes.bool,
+  isMathandInf: PropTypes.bool,
 }

@@ -1,6 +1,6 @@
 import Header from "../../components/UI/Header/Header.jsx";
 import AccordionSection from "../../components/Accordion/AccordionSection.jsx";
-import {facultetKiib} from "../../data.js";
+import {facultetKiib, MathandInf} from "../../data.js";
 import FacultetPic from "../../components/FacultetPic/FacultetPic.jsx";
 import classes from "./Facultet.module.css";
 
@@ -21,6 +21,7 @@ const FacultetKiib = () => {
       </div>
       <div className="window noHeightLimit">
         <AccordionSection header='Направления подготовки' infoBlock={facultetKiib} isAreaTeaching={true}/>
+        <AccordionSection infoBlock={MathandInf} isAreaTeaching={true}/>
       </div>
 
     </>
