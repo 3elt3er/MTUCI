@@ -46,7 +46,6 @@ export default function AccordionItem({ question, answer, onClick, openIds, id, 
                   companies={props.companies}
                   isMagistratura={props.isMagistratura}
                   isCimk={props.isCimk}
-                  isMathandInf={props.isMathandInf}
                 />
               </span>
               : <span dangerouslySetInnerHTML={{__html: answer}}></span>}
@@ -72,5 +71,4 @@ AccordionItem.propTypes = {
   companies: PropTypes.string.isRequired,
   isMagistratura: PropTypes.bool,
   isCimk: PropTypes.bool,
-  isMathandInf: PropTypes.bool,
 };
