@@ -2,7 +2,7 @@ import '../../../data.js'
 import classes from "./AreasTeaching.module.css";
 import PropTypes from "prop-types";
 
-const AreasTeaching = ({points, number, price, profile, about, proffessions, companies, isMagistratura, isCimk, isMathandInf}) => {
+const AreasTeaching = ({points, number, price, profile, about, proffessions, companies, isMagistratura, isCimk}) => {
   return (
     <section className={classes.areasTeaching}>
       <div className={classes.upperSection}>
@@ -74,7 +74,7 @@ const AreasTeaching = ({points, number, price, profile, about, proffessions, com
         : null
       }
 
-      {!isCimk && !isMagistratura && !isMathandInf ? // Расклад минималок по всем остальным направлениям по блокам
+      {!isCimk && !isMagistratura? // Расклад минималок по всем остальным направлениям по блокам
         <div className={classes.bottomSection}>
           <div className={classes.bottomBlock}>
             <h4>ЕГЭ:</h4>
@@ -84,10 +84,23 @@ const AreasTeaching = ({points, number, price, profile, about, proffessions, com
             <span>Русский язык 40/36</span>
           </div>
           <div className={classes.bottomBlock}>
+            <h4>ЕГЭ(01.00.00, 02.00.00):</h4>
+            <span>Информатика 40/60</span>
+            <span>Физика 40/60</span>
+            <span>Математика 40/60</span>
+            <span>Русский язык 40/60</span>
+          </div>
+          <div className={classes.bottomBlock}>
             <h4>ВИ:</h4>
             <span>Инф. тех. и программир. 40/10</span>
             <span>Матем. и эл. теор. вер. 40/10</span>
             <span>Русский язык 40/36</span>
+          </div>
+          <div className={classes.bottomBlock}>
+            <h4>ВИ(01.00.00, 02.00.00):</h4>
+            <span>Инф. тех. и программир. 40/60</span>
+            <span>Матем. и эл. теор. вер. 40/60</span>
+            <span>Русский язык 40/60</span>
           </div>
         </div>
         : null
@@ -106,7 +119,6 @@ AreasTeaching.propTypes = {
   companies: PropTypes.string.isRequired,
   isMagistratura: PropTypes.bool,
   isCimk: PropTypes.bool,
-  isMathandInf: PropTypes.bool
 }
 
 export default AreasTeaching;
