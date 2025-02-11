@@ -50,10 +50,10 @@ const AreasTeaching = ({points, number, price, profile, about, proffessions, com
           </div>
           <div className={classes.bottomBlock}>
             <h4>ВИ(38.00.00):</h4>
-            <span>Матем. и эл. теор. вер. 40/10</span>
+            <span>Матем. и эл. теор. вер. 40/27</span>
             <span>Русский язык 40/36</span>
-            <span>ИЛИ Инф. и инф-коммункац. тех. 40/10</span>
-            <span>ИЛИ Основы экономики 40/10</span>
+            <span>ИЛИ Инф. и инф-коммункац. тех. 40/40</span>
+            <span>ИЛИ Основы экономики 40/42</span>
           </div>
           <div className={classes.bottomBlock}>
             <h4>ЕГЭ(42.00.00):</h4>
@@ -65,10 +65,10 @@ const AreasTeaching = ({points, number, price, profile, about, proffessions, com
           </div>
           <div className={classes.bottomBlock}>
             <h4>ВИ(42.00.00):</h4>
-            <span>Основы рекламы 40/10</span>
+            <span>Основы рекламы 40/42</span>
             <span>Русский язык 40/36</span>
-            <span>ИЛИ Инф. и инф-коммункац. тех. 40/10</span>
-            <span>ИЛИ Ин. яз в проф. деят. 40/10</span>
+            <span>ИЛИ Инф. и инф-коммункац. тех. 40/40</span>
+            <span>ИЛИ Ин. яз в проф. деят. 40/30</span>
           </div>
         </div>
         : null
@@ -92,15 +92,17 @@ const AreasTeaching = ({points, number, price, profile, about, proffessions, com
           </div>
           <div className={classes.bottomBlock}>
             <h4>ВИ:</h4>
-            <span>Инф. тех. и программир. 40/10</span>
-            <span>Матем. и эл. теор. вер. 40/10</span>
+            <span>Инф. тех. и программир. 40/40</span>
+            <span>Матем. и эл. теор. вер. 40/27</span>
             <span>Русский язык 40/36</span>
+            <span>Основы прикладной физики 40/36</span>
           </div>
           <div className={classes.bottomBlock}>
             <h4>ВИ(01.00.00, 02.00.00):</h4>
             <span>Инф. тех. и программир. 40/60</span>
             <span>Матем. и эл. теор. вер. 40/60</span>
             <span>Русский язык 40/60</span>
+            <span>Основы прикладной физики 40/60</span>
           </div>
         </div>
         : null
