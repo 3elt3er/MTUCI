@@ -1294,9 +1294,9 @@ export const numbers = [
       '                                t_akopyan@mtuci.ru',
   },
   {
-    question: 'Анастасия Чутчева (Олимпиады)',
+    question: 'Алтан Кеквеев (Олимпиады)',
     answer: 'Внутренний номер: 428<br>' +
-      '                            a.i.chutcheva@mtuci.ru',
+      '                            a.a.kekveev@mtuci.ru',
   },
 ]
 
