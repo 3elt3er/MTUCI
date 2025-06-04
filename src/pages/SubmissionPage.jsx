@@ -13,7 +13,7 @@ const SubmissionPage = () => {
     <>
       <Header
         arrowBack={true}
-        contains={['Работа ПК', 'Документы', 'Прием 2024', 'Подача']}
+        contains={['Работа ПК', 'Документы', 'Прием 2025', 'Подача']}
         id={['workPK', 'documents', 'rules', 'process']}
         onClick={executeScroll}
       />
