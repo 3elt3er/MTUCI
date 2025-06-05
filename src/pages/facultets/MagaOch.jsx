@@ -17,7 +17,7 @@ const MagaOch = () => {
       <div className={`window ${classes.picture}`} id={classes.picMagOch}>
         <FacultetPic
           header={'Магистратура Очная'}
-          description={'Очная магистратура базируется на обучении студентов по 7 направлениям.'}/>
+          description={'Очная магистратура базируется на обучении студентов по 9 направлениям.'}/>
       </div>
       <div className="window noHeightLimit">
         <AccordionSection header='Направления подготовки' infoBlock={facultetMagOch} isAreaTeaching={true} isMagistratura={true}/>
