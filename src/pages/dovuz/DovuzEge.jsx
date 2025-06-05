@@ -18,16 +18,15 @@ const DovuzEge = () => {
         onClick={executeScroll}
       />
       <div className='window noHeightLimitMobile' id='dovuz'>
-        <div className={classes.headerOfPage}>Довузовская подготовка к ЕГЭ</div>
+        <div className={classes.headerOfPage}>Довузовская подготовка к ЕГЭ 11/10 классы</div>
         <div className={classes.flexBlock}>
           <div className={classes.columns}>
             <div className={`${classes.item} ${classes.firstItem}`}>
-              <div className={classes.header}>Предметы</div>
+              <div className={classes.header}>Предметы 11 класс</div>
               <span>Информатика и ИКТ</span>
               <span>Математика профильного уровня (требуется входное тестирование)</span>
               <span>Русский язык</span>
               <span>Физика</span>
-              <span>Обществознание</span>
             </div>
             <div className={classes.item}>
               <div className={classes.header}>Примечания</div>
