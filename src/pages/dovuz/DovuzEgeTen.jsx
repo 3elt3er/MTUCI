@@ -24,16 +24,16 @@ const DovuzEge = () => {
           <div className={classes.columns}>
             <div className={`${classes.item} ${classes.firstItem}`}>
               <div className={classes.header}>Предметы:</div>
-              <span>Информатика</span>
-              <span>Математика профильного уровня (требуется входное тестирование)</span>
+              <span>1. Информатика</span>
+              <span>2. Математика профильного уровня (требуется входное тестирование)</span>
             </div>
           </div>
-          <div className={classes.columns}>
-            <div className={`${classes.item} ${classes.firstItem}`}>
-              <div className={classes.header}>Стоимость</div>
-              <span>Полный курс по одному предмету 36 800 рублей за один предмет.</span>
-              <span>Оплата ежемесячно по  4 600 рублей за один предмет</span>
-            </div>
+            <div className={classes.columns}>
+              <div className={`${classes.item} ${classes.firstItem}`}>
+                <div className={classes.header}>Стоимость</div>
+                <span>Полный курс по одному предмету 36 800 рублей за один предмет.</span>
+                <span>Оплата ежемесячно по  4 600 рублей за один предмет</span>
+              </div> 
             <div className={classes.columns}>
               <div className={`${classes.item} ${classes.firstItem}`}>
                 <div className={classes.header}>Формат обучение</div>
@@ -45,7 +45,7 @@ const DovuzEge = () => {
             </div>
             <div className={classes.columns}>
               <div className={`${classes.item} ${classes.firstItem}`}>
-                <div className={classes.headre}>Расписание</div>
+                <div className={classes.header}>Расписание</div>
                  <span>Продолжительность: 32 занятия по 2 ак.часа (всего 64 ак.часа)</span>
                  <span>Расписание:</span>
                  <span>1 занятие: с 10:00 до 13:15</span>
