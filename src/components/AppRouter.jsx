@@ -26,6 +26,7 @@ import Verification from "../pages/Verification.jsx";
 import DovuzEge from "../pages/dovuz/DovuzEge.jsx";
 import DovuzOge from "../pages/dovuz/DovuzOge.jsx";
 import DovuzVi from "../pages/dovuz/DovuzVi.jsx";
+import DovuzEgeTen from '../pages/dovuz/DovuzEgeTen.jsx';
 
 const AppRouter = () => {
   function ScrollToTop() {
@@ -67,7 +68,7 @@ const AppRouter = () => {
             <Route path="/scripts" element={<Scripts/>}/>
             <Route path="/verification" element={<Verification/>}/>
             <Route path="/dovuz-ege" element={<DovuzEge/>}/>
-
+            <Route path="/dovuz-egeten" element={<DovuzEgeTen/>}/>
             <Route path="/dovuz-oge" element={<DovuzOge/>}/>
             <Route path="/dovuz-vi" element={<DovuzVi/>}/>
             {/*<Route path="/*" element={<Error/>}/>*/}
