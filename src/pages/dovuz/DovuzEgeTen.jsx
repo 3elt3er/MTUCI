@@ -34,6 +34,7 @@ const DovuzEge = () => {
             </div>
             <div className={`${classes.item} ${classes.firstItem}`}>
               <div className={classes.header}>Формат обучение</div>
+              <span>Продолжительность: 32 занятия по 2 ак.часа (всего 64 ак.часа)</span>
               <span>Суббота:</span>
               <span>с 10:00 до 16:45</span>
               <span>1. Математика (профиль) с 11:45 до 13:20</span>
@@ -41,7 +42,6 @@ const DovuzEge = () => {
             </div>
             <div className={`${classes.item} ${classes.firstItem}`}>
               <div className={classes.header}>Расписание</div>
-              <span>Продолжительность: 32 занятия по 2 ак.часа (всего 64 ак.часа)</span>
               <span>Расписание:</span>
               <span>1 занятие: с 10:00 до 13:15</span>
               <span>2 занятие: с 11:45 до 13:20</span>
