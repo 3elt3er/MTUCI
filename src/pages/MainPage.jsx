@@ -102,7 +102,8 @@ const MainPage = () => {
           >
             {
               [
-                { text: 'Подготовка к ЕГЭ', to: '/dovuz-ege' },
+                { text: 'Подготовка к ЕГЭ 11 класс', to: '/dovuz-ege' },
+                { text: 'Подготовка к ЕГЭ 10 класс', to: '/dovuz-ege10' },
                 { text: 'Подготовка к ОГЭ', to: '/dovuz-oge' },
                 { text: 'Подготовка к ВИ', to: '/dovuz-vi' },
               ]

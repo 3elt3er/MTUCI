@@ -24,6 +24,7 @@ import MagaOchZaoch from "../pages/facultets/MagaOchZaoch.jsx";
 import Scripts from "../pages/Scripts.jsx";
 import Verification from "../pages/Verification.jsx";
 import DovuzEge from "../pages/dovuz/DovuzEge.jsx";
+import DovuzEgeTen from '../pages/dovuz/DovuzEgeTen.jsx';
 import DovuzOge from "../pages/dovuz/DovuzOge.jsx";
 import DovuzVi from "../pages/dovuz/DovuzVi.jsx";
 
@@ -67,6 +68,7 @@ const AppRouter = () => {
             <Route path="/scripts" element={<Scripts/>}/>
             <Route path="/verification" element={<Verification/>}/>
             <Route path="/dovuz-ege" element={<DovuzEge/>}/>
+            <Route path="/dovuz-ege10" element={<DovuzEgeTen/>}/>
             <Route path="/dovuz-oge" element={<DovuzOge/>}/>
             <Route path="/dovuz-vi" element={<DovuzVi/>}/>
             {/*<Route path="/*" element={<Error/>}/>*/}
