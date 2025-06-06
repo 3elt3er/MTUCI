@@ -18,49 +18,33 @@ const DovuzOge = () => {
         onClick={executeScroll}
       />
       <div className='window noHeightLimitMobile' id='dovuz'>
-        <div className={classes.headerOfPage}>Довузовская подготовка к ОГЭ и 10 класс</div>
+        <div className={classes.headerOfPage}>Довузовская подготовка к ОГЭ</div>
         <div className={classes.flexBlock}>
           <div className={classes.columns}>
             <div className={`${classes.item} ${classes.firstItem}`}>
-              <div className={classes.header}>Предметы</div>
-              <span>Информатика и ИКТ</span>
-              <span>Русский язык</span>
-              <span>Математика профильного уровня</span>
+              <div className={classes.header}>Предметы:</div>
+              <span>1. Информатика</span>
+              <span>2. Русский язык</span>
+              <span>3. Математика</span>
             </div>
-            <div className={classes.item}>
-              <div className={classes.header}>Примечания</div>
-              <span>Расписанием предусмотрен пятиминутный перерыв каждые 45 минут обучения, а также десятиминутный перерыв между занятиями.</span>
+            <div className={`${classes.item} ${classes.firstItem}`}>
+              <div className={classes.header}>Стоимость:</div>
+              <span>Полный курс по одному предмету 36 800 рублей за один предмет.</span>
+              <span>Оплата ежемесячно по  4 600 рублей за один предмет</span>
             </div>
-          </div>
-          <div className={classes.columns}>
-            <div className={`${classes.item} ${classes.secondItem}`}>
-              <div className={classes.header}>Расписание</div>
-              <span>Продолжительность: 32 занятия по 2 ак.часа (всего 64 к.часов)</span>
-              <span>Расписание 10 класс:</span>
-              <span>Математика: с 12:30 до 14:05 </span>
-              <span>Информатика и ИКТ: с 14:15 до 15:55</span>
+            <div className={`${classes.item} ${classes.firstItem}`}>
+              <div className={classes.header}>Формат:</div>
+              <span>Продолжительность: 32 занятия по 2 ак.часа (всего 64 ак.часа)</span>
+              <span>Суббота:</span>
+              <span>1. Русский язык с 10:00 до 11:35</span>
+              <span>2. Математика (профиль) с 11:45 до 13:20</span>
+              <span>3. Информатика с 13:30 до 15:05</span>
             </div>
-            <div className={classes.item}>
-              <div className={classes.header}>Расписание</div>
-              <span>Продолжительность: 32 занятия по 2 ак.часа (всего 64 к.часов)</span>
-              <span>Расписание ОГЭ:</span>
-              <span>Русский язык: с 9:00 до 10:35</span>
-              <span>Математика: с 10:45 до 12:20 </span>
-              <span>Информатика и ИКТ: с 12:30 до 14:05</span>
-            </div>
-          </div>
-          <div className={classes.columns}>
-            <div className={`${classes.item} ${classes.thirdItem}`}>
-              <div className={classes.header}>Стоимость</div>
-              <span>Полный курс по одному предмету стоит 32 000 руб.</span>
-              <span>Оплата ежемесячно по 4000 руб. за предмет.</span>
-            </div>
-            <div className={classes.item}>
-              <div className={classes.header}>Сроки (устарели)</div>
-              <span>Входное тестирование (для информатики и математики): 9.09, 10.09, 16.09, 17.09</span>
-              <span>Старт курсов: 23.09.23</span>
-              <span>Плановое окончание: 11.05.24</span>
-              <span>(справочно: в 2023 году русский язык и математика закончили 27.05, информатика 17.06)</span>
+            <div className={`${classes.item} ${classes.firstItem}`}>
+              <div className={classes.header}>Расписание:</div>
+              <span>1 занятие: с 10:00 до 11:35</span>
+              <span>2 занятие: с 11:45 до 13:20</span>
+              <span>3 занятие с 13:30 до 15:05</span>
             </div>
           </div>
         </div>

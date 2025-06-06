@@ -19,7 +19,7 @@ const DovuzEge = () => {
         onClick={executeScroll}
       />
       <div className='window noHeightLimitMobile' id='dovuz'>
-        <div className={classes.headerOfPage}>Довузовская подготовка к ЕГЭ 11/10 классы</div>
+        <div className={classes.headerOfPage}>Довузовская подготовка к ЕГЭ 11 класс</div>
         <div className={classes.flexBlock}>
           <div className={classes.columns}>
             <div className={`${classes.item} ${classes.firstItem}`}>
