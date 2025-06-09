@@ -69,7 +69,7 @@ const MainPage = () => {
               [
                 { text: 'ИТ', to: '/facultet-it' },
                 { text: 'КиИБ', to: '/facultet-kiib' },
-                { text: 'Рит', to: '/facultet-rit' },
+                { text: 'РиТ', to: '/facultet-rit' },
                 { text: 'СиСС', to: '/facultet-sis' },
                 { text: 'ЦЭиМК', to: '/facultet-cimk' },
               ]
