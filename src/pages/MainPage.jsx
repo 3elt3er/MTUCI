@@ -4,6 +4,7 @@ import AreasOfTeaching from "../components/AreasOfTeaching/AreasOfTeaching.jsx";
 import CardSection from "../components/CardSection/CardSection.jsx";
 import MyFooter from "../components/UI/Footer/MyFooter.jsx";
 import {useEffect, useRef} from "react";
+import '../index.css';
 
 const MainPage = () => {
 
@@ -35,29 +36,35 @@ const MainPage = () => {
         id={['FAQ', 'picture', 'scripts', 'dovuz']}
         onClick={executeScroll}
       />
-      <div className="container">
-        <div className="window" id='FAQ'>
-          <InfoButtonList
-            infoHeader='Блок “FAQ”'
-            infoText='Общие вопросы по поступлению в 2025 году'
-          >
-            {
-              [
-                { text: 'Подача документов', to: '/submission' },
-                { text: 'Бюджет и БВИ', to: '/budget-bvi'},
-                { text: 'Платное и целевое обучение', to: '/paid-training'},
-                { text: 'Индивид. достижения', to: '/individual-achievements'},
-                { text: 'Поступление по квотам', to: '/quotas'},
-                { text: 'Учебный процесс и активности', to: '/activities'},
-                { text: 'Вопросы по общежитию', to: '/hostel'},
-                { text: 'Отсрочка от армии', to: '/deferment'},
-                { text: 'Номера отделов', to: '/numbers'},
-              ]
-            }
-          </InfoButtonList>
+        <div className="container">
+          <div className="window" id='FAQ'>
+            <InfoButtonList
+              infoHeader='Блок “FAQ”'
+              infoText='Общие вопросы по поступлению в 2025 году'
+            >
+              {
+                [
+                  { text: 'Подача документов', to: '/submission' },
+                  { text: 'Бюджет и БВИ', to: '/budget-bvi'},
+                  { text: 'Платное обучение', to: '/paid-training'},
+                  { text: 'Индивид. достижения', to: '/individual-achievements'},
+                  { text: 'Поступление по квотам', to: '/quotas'},
+                  { text: 'Учебный процесс и активности', to: '/activities'},
+                  { text: 'Вопросы по общежитию', to: '/hostel'},
+                  { text: 'Отсрочка от армии', to: '/deferment'},
+                  { text: 'Номера отделов', to: '/numbers'},
+                ]
+              }
+            </InfoButtonList>      
+          </div>
         </div>
         <div className="window" id='picture'>
           <AreasOfTeaching
+          fourRow={
+            [
+              { text: 'Целевое обуение', to: '/celevoe'},
+            ]
+          }
             firstRow={
               [
                 { text: 'ИТ', to: '/facultet-it' },
@@ -110,7 +117,6 @@ const MainPage = () => {
             }
           </CardSection>
         </div>
-      </div>
       <MyFooter/>
       <button onClick={() => executeScroll('FAQ')}>
         <img ref={arrowRef} className='arrowUp' src="arrowUp.svg" alt="Стрелка вверх"/>

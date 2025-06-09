@@ -7,6 +7,7 @@ import PaidTraining from "../pages/PaidTraining.jsx";
 import IndividualAchievements from "../pages/IndividualAchievements.jsx";
 import Quotas from "../pages/Quotas.jsx";
 import Activities from "../pages/Activities.jsx";
+import Celevoe from "../pages/Celevoe.jsx";
 import Hostel from "../pages/Hostel.jsx";
 import Deferment from "../pages/Deferment.jsx";
 import Numbers from "../pages/Numbers.jsx";
@@ -51,6 +52,7 @@ const AppRouter = () => {
             <Route path="/individual-achievements" element={<IndividualAchievements/>}/>
             <Route path="/quotas" element={<Quotas/>}/>
             <Route path="/activities" element={<Activities/>}/>
+            <Route path="/celevoe" element={<Celevoe/>}/>
             <Route path="/hostel" element={<Hostel/>}/>
             <Route path="/deferment" element={<Deferment/>}/>
             <Route path="/numbers" element={<Numbers/>}/>

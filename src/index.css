@@ -99,3 +99,11 @@ a:active {
     min-width: 100%; /* Минимальная ширина изображения на всю ширину экрана */
     min-height: 100%; /* Минимальная высота изображения на всю высоту экрана */
 }
+
+.columns {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}

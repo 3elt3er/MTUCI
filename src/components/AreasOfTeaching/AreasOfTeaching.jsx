@@ -3,7 +3,7 @@ import ButtonList from "../ButtonList/ButtonList.jsx";
 import classes from "./AreasOfTeaching.module.css";
 import PropTypes from 'prop-types';
 
-const AreasOfTeaching = ({ firstRow, secondRow, thirdRow }) => {
+const AreasOfTeaching = ({ firstRow, secondRow, thirdRow, fourRow }) => {
   const whiteButtonStyles = {
     color: 'white',
     border: '1px solid white'
@@ -11,6 +11,12 @@ const AreasOfTeaching = ({ firstRow, secondRow, thirdRow }) => {
 
   return (
     <div className={classes.flexBox}>
+      <div className={classes.areasOfTeaching}>
+        <h2>Целевое обучение</h2>
+        <ButtonList style={whiteButtonStyles}>
+          {fourRow}
+        </ButtonList>
+      </div>
       <div className={classes.areasOfTeaching}>
         <h2>Очный бакалавриат</h2>
         <ButtonList style={whiteButtonStyles}>
