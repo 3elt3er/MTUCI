@@ -49,9 +49,6 @@ a:active {
     color: inherit;
 }
 
-.App {
-}
-
 .window {
     position: relative;
     display: flex;
