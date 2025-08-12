@@ -41,12 +41,14 @@
 }
 
 .header {
+    text-align: center;
     font-weight: 600;
     font-size: 22px;
     @media screen and (max-width: 100px) {
         font-size: 14px;
     }
 }
+
 
 .headerOfPage {
     text-align: center;
