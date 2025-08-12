@@ -9,6 +9,7 @@ const DovuzVi = () => {
       section.scrollIntoView({ behavior: "smooth" });
     }
   };
+
   return (
     <>
       <Header
@@ -17,42 +18,52 @@ const DovuzVi = () => {
         id={['dovuz', 'advantages']}
         onClick={executeScroll}
       />
+
       <div className='window noHeightLimitMobile' id='dovuz'>
         <div className={classes.headerOfPage}>Довузовская подготовка к ВИ</div>
+        
         <div className={classes.flexBlock}>
-        <div className={classes.columns}>
-            <div className={`${classes.item} ${classes.firstItem}`}>
-              <div className={classes.header}>Формат курсов:</div>
-              <span>• полный курс(старт 05.10.2025)</span>
-              <span>• ускоренный курс(старт 02.03.2026)</span>
-              <span>• ускоренный курс в дистанционном формате</span>
-            </div>
-          </div>
+          {/* Блок 1: Формат курсов */}
           <div className={classes.columns}>
             <div className={`${classes.item} ${classes.firstItem}`}>
-              <div className={classes.header}>Предметы</div>
+              <div className={classes.header}>Формат курсов:</div>
+              <span>• Полный курс (старт 05.10.2025)</span>
+              <span>• Ускоренный курс (старт 02.03.2026)</span>
+              <span>• Ускоренный курс в дистанционном формате</span>
+            </div>
+          </div>
+
+          {/* Блок 2: Предметы */}
+          <div className={classes.columns}>
+            <div className={`${classes.item} ${classes.firstItem}`}>
+              <div className={classes.header}>Предметы:</div>
               <span>1. Информатика и информационно-коммуникационные технологии</span>
               <span>2. Математика и элементы теории вероятностей</span>
               <span>3. Русский язык</span>
             </div>
           </div>
+
+          {/* Блок 3: Стоимость очных курсов */}
           <div className={classes.columns}>
             <div className={`${classes.item} ${classes.firstItem}`}>
-              <div className={classes.header}>Стоимость полных и ускоренных курсов ВИ в ОЧНОМ формате:</div>
-              <span>Стоимость 1 месяца (4 занятия) - 5000Р</span>
-              <span>Стоимость ПОЛНОГО курса (32 занятия) - 40000Р</span>
-              <span>Стоимость УСКОРЕННОГО курса (16 занятий) - 20000Р</span>
+              <div className={classes.header}>Стоимость полных и ускоренных курсов ВИ в очном формате:</div>
+              <span>• Стоимость 1 месяца (4 занятия) - 5 000 ₽</span>
+              <span>• Стоимость полного курса (32 занятия) - 40 000 ₽</span>
+              <span>• Стоимость ускоренного курса (16 занятий) - 20 000 ₽</span>
             </div>
           </div>
+
+          {/* Блок 4: Стоимость дистанционных курсов */}
           <div className={classes.columns}>
             <div className={`${classes.item} ${classes.firstItem}`}>
-              <div className={classes.header}>Стоимость ускоренного курса в ДИСТАНЦИОННОМ формате:</div>
-              <span>Стоимость 1 месяца (4 занятия) - 4000Р</span>
-              <span>Стоимость курса (16 занятий) - 16000Р</span>
+              <div className={classes.header}>Стоимость ускоренного курса в дистанционном формате:</div>
+              <span>• Стоимость 1 месяца (4 занятия) - 4 000 ₽</span>
+              <span>• Стоимость курса (16 занятий) - 16 000 ₽</span>
             </div>
           </div>
         </div>
       </div>
+
       <div className='window noHeightLimitMobile' id='advantages'>
         <DovuzAdvantages/>
       </div>
