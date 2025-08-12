@@ -9,17 +9,21 @@ const DovuzOge = () => {
       section.scrollIntoView({ behavior: "smooth" });
     }
   };
+  
   return (
     <>
       <Header
         arrowBack={true}
-        contains={['Довузовская подготовка к ОГЭ и 10 класс', 'Преимущества']}
+        contains={['Довузовская подготовка к ОГЭ 9 класс', 'Преимущества']}
         id={['dovuz', 'advantages']}
         onClick={executeScroll}
       />
+      
       <div className='window noHeightLimitMobile' id='dovuz'>
         <div className={classes.headerOfPage}>Довузовская подготовка к ОГЭ</div>
+        
         <div className={classes.flexBlock}>
+          {/* Блок 1: Предметы */}
           <div className={classes.columns}>
             <div className={`${classes.item} ${classes.firstItem}`}>
               <div className={classes.header}>Предметы:</div>
@@ -27,11 +31,25 @@ const DovuzOge = () => {
               <span>2. Русский язык</span>
               <span>3. Математика</span>
             </div>
+          </div>
+          
+          {/* Блок 2: Стоимость */}
+          <div className={classes.columns}>
             <div className={`${classes.item} ${classes.firstItem}`}>
               <div className={classes.header}>Стоимость:</div>
-              <span>Полный курс по одному предмету 36 800 рублей за один предмет.</span>
-              <span>Оплата ежемесячно по  4 600 рублей за один предмет</span>
+              <span>Стоимость курса (32 занятия) - 36800Р</span>
+              <span>Стоимость 1 месяца (4 занятия) - 4600Р</span>
             </div>
+            
+            <div className={`${classes.item} ${classes.firstItem}`}>
+              <div className={classes.header}>Стоимость если брать 3 предмета, то скидка 10%:</div>
+              <span>Стоимость курса (32 занятия) - 33120Р</span>
+              <span>Стоимость 1 (4 занятия) месяца - 4140Р</span>
+            </div>
+          </div>
+          
+          {/* Блок 3: Формат и расписание */}
+          <div className={classes.columns}>
             <div className={`${classes.item} ${classes.firstItem}`}>
               <div className={classes.header}>Формат:</div>
               <span>Продолжительность: 32 занятия по 2 ак.часа (всего 64 ак.часа)</span>
@@ -40,6 +58,7 @@ const DovuzOge = () => {
               <span>2. Математика (профиль) с 11:45 до 13:20</span>
               <span>3. Информатика с 13:30 до 15:05</span>
             </div>
+            
             <div className={`${classes.item} ${classes.firstItem}`}>
               <div className={classes.header}>Расписание:</div>
               <span>1 занятие: с 10:00 до 11:35</span>
@@ -49,6 +68,7 @@ const DovuzOge = () => {
           </div>
         </div>
       </div>
+      
       <div className='window noHeightLimitMobile' id='advantages'>
         <DovuzAdvantages/>
       </div>
